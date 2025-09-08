@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>News Magazine Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="site-wrap header-inner">
+        <div class="header-left">
+          <div class="menu-icon" aria-hidden="true">☰</div>
+          <div class="logo">
+            <img src="https://picsum.photos/200/48?random=100" alt="Logo" />
+          </div>
+        </div>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="#">FEATURES ▾</a></li>
+            <li><a href="#">BUY THEME</a></li>
+            <li><a href="#">ENTERTAINMENT</a></li>
+            <li><a href="#">POLITICS</a></li>
+            <li><a href="#">FASHION</a></li>
+            <li><a href="#">SPORTS</a></li>
+            <li><a href="#">TECH</a></li>
+            <li><a href="#">BUSINESS</a></li>
+            <li><a href="#">SHOP</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-right">
+          <button class="login-btn">Login</button>
+          <div class="search-icon" aria-hidden="true">🔍</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-wrap">
+      <div class="container">
+        <!-- LEFT COLUMN -->
+        <section class="left-col">
+          <div class="section-title">TRENDING</div>
+
+          <!-- trend-list is bottom aligned so items sit at the bottom of the column -->
+          <div class="trend-list">
+            <article class="trend-item">
+              <img src="https://picsum.photos/400/240?random=1" alt="" />
+              <div class="meta">ENTERTAINMENT / 6 years ago</div>
+              <h2>
+                1 The final 6 ‘Game of Thrones’ episodes might feel like a full
+                season
+              </h2>
+            </article>
+
+            <article class="trend-item">
+              <img src="https://picsum.photos/400/240?random=2" alt="" />
+              <div class="meta">ENTERTAINMENT / 6 years ago</div>
+              <h2>
+                2 ‘Girls Trip’ already surpasses ‘Rough Night’ in opening
+                weekend
+              </h2>
+            </article>
+
+            <article class="trend-item">
+              <img src="https://picsum.photos/400/240?random=3" alt="" />
+              <div class="meta">ENTERTAINMENT / 6 years ago</div>
+              <h2>
+                3 New Season 8 Walking Dead trailer flashes forward in time
+              </h2>
+            </article>
+
+            <article class="trend-item">
+              <img src="https://picsum.photos/400/240?random=4" alt="" />
+              <div class="meta">TECH / 6 years ago</div>
+              <h2>
+                4 Mobile Google CEO Promises 11 Daydream-compatible phones
+              </h2>
+            </article>
+
+            <article class="trend-item">
+              <img src="https://picsum.photos/400/240?random=5" alt="" />
+              <div class="meta">POLITICS / 6 years ago</div>
+              <h2>
+                5 Mayors agree, Congress should invest in affordable housing
+              </h2>
+            </article>
+          </div>
+        </section>
+
+        <!-- CENTER COLUMN -->
+        <section class="center-col">
+          <!-- first (tall) -->
+          <article class="main-story">
+            <img src="https://picsum.photos/900/520?random=6" alt="" />
+            <div class="meta highlight">POLITICS / 6 years ago</div>
+            <h1>Illinois' Financial Crisis Fallout</h1>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti.
+            </p>
+          </article>
+
+          <!-- smaller, equal-height pair -->
+          <article class="main-story">
+            <img src="https://picsum.photos/900/260?random=7" alt="" />
+            <div class="meta highlight">FASHION / 6 years ago</div>
+            <h1>These ’90s fashion trends are making a comeback in 2017</h1>
+          </article>
+
+          <article class="main-story">
+            <img src="https://picsum.photos/900/260?random=8" alt="" />
+            <div class="meta highlight">ENTERTAINMENT / 6 years ago</div>
+            <h1>‘Better Call Saul’ has been renewed for a fourth season</h1>
+          </article>
+        </section>
+
+        <!-- RIGHT COLUMN -->
+        <aside class="right-col">
+          <div class="tabs">
+            <span class="active">LATEST</span>
+            <span>VIDEOS</span>
+            <span>GALLERIES</span>
+          </div>
+
+          <!-- latest-list bottom aligned so items line up with center-bottom -->
+          <div class="latest-list">
+            <div class="latest-item">
+              <div class="meta">TECH / 6 years ago</div>
+              <h3>Mobile Google CEO Promises 11 Daydream-compatible phones</h3>
+            </div>
+            <div class="latest-item">
+              <div class="meta">POLITICS / 6 years ago</div>
+              <h3>
+                Mayors agree, Congress should invest in affordable housing
+              </h3>
+            </div>
+            <div class="latest-item">
+              <div class="meta">TECH / 6 years ago</div>
+              <h3>
+                Ford’s 2018 Mustang GT can do 0-to-60 mph in under 4 seconds
+              </h3>
+            </div>
+            <div class="latest-item">
+              <div class="meta">FASHION / 6 years ago</div>
+              <h3>
+                9 Celebrities who have spoken out about being photoshopped
+              </h3>
+            </div>
+            <div class="latest-item">
+              <div class="meta">POLITICS / 6 years ago</div>
+              <h3>Congress rolls out ‘Better Deal,’ new economic agenda</h3>
+            </div>
+            <div class="latest-item">
+              <div class="meta">TECH / 6 years ago</div>
+              <h3>Hulu hires Google marketing veteran Kelly Campbell as CMO</h3>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- fix needed -->
+      <hr />
+      <!-- ENTERTAINMENT SECTION -->
+      <section class="section entertainment">
+        <div class="main-article">
+          <img src="https://via.placeholder.com/800x600" alt="Main article" />
+          <div class="overlay">
+            <span class="category">ENTERTAINMENT</span>
+            <span class="time">/ 6 years ago</span>
+            <h2>Final 'Game of Thrones' Episodes</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+
+        <div class="side-articles">
+          <div class="article">
+            <img src="https://via.placeholder.com/400x250" alt="" />
+            <span class="category">ENTERTAINMENT</span
+            ><span class="time"> / 6 years ago</span>
+            <h3>
+              ‘Girls Trip’ already surpasses ‘Rough Night’ in opening weekend
+            </h3>
+          </div>
+          <div class="article">
+            <img src="https://via.placeholder.com/400x250" alt="" />
+            <span class="category">ENTERTAINMENT</span
+            ><span class="time"> / 6 years ago</span>
+            <h3>New Season 8 Walking Dead trailer flashes forward in time</h3>
+          </div>
+          <ul class="mini-list">
+            <li>
+              <span class="category">ENTERTAINMENT</span> / 6 years ago <br />
+              Mod turns ‘Counter-Strike’ into a ‘Tekken’ clone with fighting
+              chickens
+            </li>
+            <li>
+              <span class="category">ENTERTAINMENT</span> / 6 years ago <br />
+              Meet Superman’s grandfather in new trailer for Krypton
+            </li>
+            <li>
+              <span class="category">ENTERTAINMENT</span> / 6 years ago <br />
+              Disney’s live-action Aladdin finally finds its stars
+            </li>
+          </ul>
+          <a href="#" class="more-link">MORE ENTERTAINMENT →</a>
+        </div>
+      </section>
+
+      <!-- VIDEOS SECTION -->
+      <section class="section videos">
+        <!-- <h2 class="section-title">VIDEOS</h2> -->
+        <div class="video-container">
+          <div class="main-video">
+            <img src="https://via.placeholder.com/800x500" alt="" />
+            <div class="overlay">
+              <span class="category">ENTERTAINMENT</span
+              ><span class="time"> / 6 years ago</span>
+              <h2>
+                Mod turns ‘Counter-Strike’ into a ‘Tekken’ clone with fighting
+                chickens
+              </h2>
+            </div>
+          </div>
+          <div class="video-list">
+            <div class="video-item">
+              <img src="https://via.placeholder.com/200x150" alt="" />
+              <span class="category">ENTERTAINMENT</span
+              ><span class="time"> / 6 years ago</span>
+              <h3>Meet Superman’s grandfather in new trailer for Krypton</h3>
+            </div>
+            <div class="video-item">
+              <img src="https://via.placeholder.com/200x150" alt="" />
+              <span class="category">ENTERTAINMENT</span
+              ><span class="time"> / 6 years ago</span>
+              <h3>Disney’s live-action Aladdin finally finds its stars</h3>
+            </div>
+            <div class="video-item">
+              <img src="https://via.placeholder.com/200x150" alt="" />
+              <span class="category">SPORTS</span
+              ><span class="time"> / 6 years ago</span>
+              <h3>Who are the early favorites to win the NFL rushing title?</h3>
+            </div>
+            <div class="video-item">
+              <img src="https://via.placeholder.com/200x150" alt="" />
+              <span class="category">ENTERTAINMENT</span
+              ><span class="time"> / 6 years ago</span>
+              <h3>The old and New Edition cast comes together to perform</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- BUSINESS SECTION -->
+      <section class="business-section">
+        <h2 class="section-title">BUSINESS</h2>
+
+        <div class="business-grid">
+          <!-- Left Column -->
+          <div class="left-column">
+            <div class="card">
+              <img
+                src="https://picsum.photos/600/350?random=1"
+                alt="Co-working spaces" />
+              <p class="meta">BUSINESS / 6 years ago</p>
+              <h3 class="headline">
+                6 Stunning new co-working spaces around the globe
+              </h3>
+            </div>
+
+            <div class="card small">
+              <img
+                src="https://picsum.photos/600/350?random=2"
+                alt="Business presentation" />
+              <p class="meta">BUSINESS / 6 years ago</p>
+              <h3 class="headline">
+                3 Ways to make your business presentation more relatable
+              </h3>
+            </div>
+          </div>
+
+          <!-- Center Column -->
+          <div class="center-column">
+            <div class="feature">
+              <img
+                src="https://picsum.photos/800/500?random=3"
+                alt="MSNBC News" />
+              <div class="overlay">
+                <p class="meta green">BUSINESS / 6 years ago</p>
+                <h2 class="feature-title">MSNBC Now First In Primetime</h2>
+                <p class="desc">
+                  Temporibus autem quibusdam et aut officiis debitis aut rerum
+                  necessitatibus saepe eveniet ut et voluptates.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="right-column">
+            <div class="side-card">
+              <img
+                src="https://picsum.photos/100/100?random=4"
+                alt="Job interview" />
+              <div>
+                <p class="meta">BUSINESS / 6 years ago</p>
+                <h4>
+                  This is how you dress for a job interview, and land an offer
+                </h4>
+              </div>
+            </div>
+
+            <div class="side-card">
+              <img
+                src="https://picsum.photos/100/100?random=5"
+                alt="Uber Lyft" />
+              <div>
+                <p class="meta">BUSINESS / 6 years ago</p>
+                <h4>
+                  Uber and Lyft are finally available in all of New York State
+                </h4>
+              </div>
+            </div>
+
+            <div class="side-card">
+              <img
+                src="https://picsum.photos/100/100?random=6"
+                alt="Work mistakes" />
+              <div>
+                <p class="meta">BUSINESS / 6 years ago</p>
+                <h4>The 9 worst mistakes you can ever make at work</h4>
+              </div>
+            </div>
+
+            <a href="#" class="more-link">MORE BUSINESS →</a>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- tech section  -->
+
+      <section class="tech-section">
+        <header class="section-title">
+          <span>TECH</span>
+        </header>
+
+        <!-- First row: two large featured cards -->
+        <section class="row featured-row">
+          <article class="card featured">
+            <figure class="media">
+              <img
+                src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?q=80&w=1600&auto=format&fit=crop"
+                alt="VR headset" />
+            </figure>
+            <div class="card-overlay">
+              <p class="meta">TECH / 6 years ago</p>
+              <h2 class="card-title">
+                Mobile Google CEO Promises 11 Daydream-compatible phones
+              </h2>
+            </div>
+          </article>
+
+          <article class="card featured">
+            <figure class="media">
+              <img
+                src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?q=80&w=1600&auto=format&fit=crop"
+                alt="Blue car" />
+            </figure>
+            <div class="card-overlay">
+              <p class="meta">TECH / 6 years ago</p>
+              <h2 class="card-title">
+                Ford’s 2018 Mustang GT can do 0-to-60 mph in under 4 seconds
+              </h2>
+            </div>
+          </article>
+        </section>
+
+        <!-- Second row: four small cards -->
+        <section class="row small-row">
+          <article class="card small">
+            <figure class="media">
+              <img
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop"
+                alt="Business meeting" />
+            </figure>
+            <div class="card-body">
+              <p class="meta">TECH / 6 years ago</p>
+              <h3 class="card-title">
+                Hulu hires Google marketing veteran Kelly Campbell as CMO
+              </h3>
+            </div>
+          </article>
+
+          <article class="card small">
+            <figure class="media">
+              <img
+                src="https://images.unsplash.com/photo-1504198266285-165a16f8f315?q=80&w=800&auto=format&fit=crop"
+                alt="Airplane landing" />
+            </figure>
+            <div class="card-body">
+              <p class="meta">TECH / 6 years ago</p>
+              <h3 class="card-title">
+                NASA seeks to build a quieter supersonic plane for passenger
+                flight
+              </h3>
+            </div>
+          </article>
+
+          <article class="card small">
+            <figure class="media">
+              <img
+                src="https://images.unsplash.com/photo-1522202195465-dc3bd6e2bcb6?q=80&w=800&auto=format&fit=crop"
+                alt="Friends at laptop" />
+            </figure>
+            <div class="card-body">
+              <p class="meta">TECH / 6 years ago</p>
+              <h3 class="card-title">
+                Microsoft Paint is finally dead, and the world Is a better place
+              </h3>
+            </div>
+          </article>
+
+          <article class="card small">
+            <figure class="media">
+              <img
+                src="https://images.unsplash.com/photo-1485217988980-11786ced9454?q=80&w=800&auto=format&fit=crop"
+                alt="App thumbnails" />
+            </figure>
+            <div class="card-body">
+              <p class="meta">TECH / 6 years ago</p>
+              <h3 class="card-title">
+                Netflix was the top grossing app in Q2, with mobile revenue up
+                233%
+              </h3>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <hr />
+      <!-- more news  -->
+      <header class="section-title">
+        <span>MORE NEWS</span>
+      </header>
+
+      <div class="content-grid">
+        <!-- Left column -->
+        <div class="main-news">
+          <!-- 1 -->
+          <article class="news-card">
+            <div class="news-img">
+              <img
+                src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=1600&auto=format&fit=crop"
+                alt="Building" />
+            </div>
+            <div class="news-body">
+              <p class="meta">POLITICS / 6 years ago</p>
+              <h2 class="title">
+                Mayors agree, Congress should invest in affordable housing
+              </h2>
+              <p class="excerpt">
+                Temporibus autem quibusdam et aut officiis debitis aut rerum
+                necessitatibus saepe eveniet ut et voluptates repudiandae.
+              </p>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="news-card">
+            <div class="news-img">
+              <img
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1600&auto=format&fit=crop"
+                alt="Fashion" />
+            </div>
+            <div class="news-body">
+              <p class="meta">FASHION / 6 years ago</p>
+              <h2 class="title">
+                9 Celebrities who have spoken out about being photoshopped
+              </h2>
+              <p class="excerpt">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam.
+              </p>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="news-card">
+            <div class="news-img">
+              <img
+                src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1600&auto=format&fit=crop"
+                alt="Plane" />
+            </div>
+            <div class="news-body">
+              <p class="meta">SCIENCE / 6 years ago</p>
+              <h2 class="title">
+                NASA seeks to build a quieter supersonic passenger plane
+              </h2>
+              <p class="excerpt">
+                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit.
+              </p>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="news-card">
+            <div class="news-img">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop"
+                alt="Tech" />
+            </div>
+            <div class="news-body">
+              <p class="meta">TECH / 6 years ago</p>
+              <h2 class="title">
+                Microsoft Paint is finally dead, and the world is a better place
+              </h2>
+              <p class="excerpt">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium.
+              </p>
+            </div>
+          </article>
+
+          <!-- 5 (full width) -->
+          <article class="news-full">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop"
+              alt="People" />
+            <div class="news-body">
+              <p class="meta">LIFESTYLE / 6 years ago</p>
+              <h2 class="title">
+                How millennials are reshaping workplace culture
+              </h2>
+              <p class="excerpt">
+                Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                esse quam nihil molestiae consequatur.
+              </p>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="news-card">
+            <div class="news-img">
+              <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop"
+                alt="Finance" />
+            </div>
+            <div class="news-body">
+              <p class="meta">BUSINESS / 6 years ago</p>
+              <h2 class="title">
+                Global markets show resilience despite uncertainty
+              </h2>
+              <p class="excerpt">
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam.
+              </p>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="news-card">
+            <div class="news-img">
+              <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop"
+                alt="Work" />
+            </div>
+            <div class="news-body">
+              <p class="meta">CAREER / 6 years ago</p>
+              <h2 class="title">
+                Remote work is here to stay — what it means for offices
+              </h2>
+              <p class="excerpt">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit.
+              </p>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="news-card">
+            <div class="news-img">
+              <img
+                src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?q=80&w=1600&auto=format&fit=crop"
+                alt="Sports" />
+            </div>
+            <div class="news-body">
+              <p class="meta">SPORTS / 6 years ago</p>
+              <h2 class="title">
+                The rise of analytics in modern sports strategy
+              </h2>
+              <p class="excerpt">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+          </article>
+
+          <!-- 9 -->
+          <article class="news-card">
+            <div class="news-img">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop"
+                alt="Innovation" />
+            </div>
+            <div class="news-body">
+              <p class="meta">TECH / 6 years ago</p>
+              <h2 class="title">
+                Startups pushing the boundaries of innovation
+              </h2>
+              <p class="excerpt">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </article>
+
+          <!-- 10 (full width) -->
+          <article class="news-full">
+            <img
+              src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1600&auto=format&fit=crop"
+              alt="Nature" />
+            <div class="news-body">
+              <p class="meta">ENVIRONMENT / 6 years ago</p>
+              <h2 class="title">
+                Climate change is reshaping our natural landscapes
+              </h2>
+              <p class="excerpt">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Right column -->
+        <aside class="sidebar">
+          <div class="sidebar-block">
+            <header class="sidebar-title"><span>LATEST</span></header>
+            <ul class="sidebar-list">
+              <li>
+                <img
+                  src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=400&auto=format&fit=crop"
+                  alt="Tech" />
+                <div>
+                  <p class="meta">TECH / 6 years ago</p>
+                  <h3>
+                    Mobile Google CEO Promises 11 Daydream-compatible phones
+                  </h3>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400&auto=format&fit=crop"
+                  alt="Politics" />
+                <div>
+                  <p class="meta">POLITICS / 6 years ago</p>
+                  <h3>
+                    Illinois’ financial crisis could bring the state to a halt
+                  </h3>
+                </div>
+              </li>
+              <li>
+                <img
+                  src="https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=400&auto=format&fit=crop"
+                  alt="Politics" />
+                <div>
+                  <p class="meta">POLITICS / 6 years ago</p>
+                  <h3>
+                    Mayors agree, Congress should invest in affordable housing
+                  </h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <!-- footer  -->
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2025 Your News Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
