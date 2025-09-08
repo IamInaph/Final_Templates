@@ -1,0 +1,14 @@
+/* Footer */
+.site-footer {
+  background: #111; /* dark background */
+  color: #ccc; /* light gray text */
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.site-footer p {
+  margin: 0;
+}
