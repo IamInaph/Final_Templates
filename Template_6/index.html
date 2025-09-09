@@ -1,3152 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-      name="viewport" />
-    <title>Vink-News – Just another Vinkmag site</title>
-    <link
-      as="style"
-      data-rocket-preload=""
-      href="https://fonts.googleapis.com/css?family=Arimo%3A400%2C400i%2C700%2C700i%7CHeebo%3A400%2C500%2C700%2C800%2C900%7CMerriweather%3A400%2C400i%2C700%2C700i%2C900%2C900i%7CArimo%3Aregular%7CHeebo%3A500&amp;display=swap"
-      rel="preload" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Arimo%3A400%2C400i%2C700%2C700i%7CHeebo%3A400%2C500%2C700%2C800%2C900%7CMerriweather%3A400%2C400i%2C700%2C700i%2C900%2C900i%7CArimo%3Aregular%7CHeebo%3A500&amp;display=swap"
-      media="all"
-      rel="stylesheet" />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css?family=Arimo%3A400%2C400i%2C700%2C700i%7CHeebo%3A400%2C500%2C700%2C800%2C900%7CMerriweather%3A400%2C400i%2C700%2C700i%2C900%2C900i%7CArimo%3Aregular%7CHeebo%3A500&amp;display=swap"
-        rel="stylesheet" />
-    </noscript>
-    <link
-      as="image"
-      data-rocket-preload=""
-      fetchpriority="high"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/12/feature3.jpg"
-      rel="preload" />
-    <meta content="max-image-preview:large" name="robots" />
-    <meta
-      content="width=device-width, initial-scale=1, maximum-scale=5"
-      name="viewport" />
-    <meta content="Vink-News - Just another Vinkmag site" name="description" />
-    <link href="//fonts.googleapis.com" rel="dns-prefetch" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/feed/"
-      rel="alternate"
-      title="Vink-News » Feed"
-      type="application/rss+xml" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/comments/feed/"
-      rel="alternate"
-      title="Vink-News » Comments Feed"
-      type="application/rss+xml" />
-    <style id="wp-emoji-styles-inline-css" type="text/css">
-      img.wp-smiley,
-      img.emoji {
-        display: inline !important;
-        border: none !important;
-        box-shadow: none !important;
-        height: 1em !important;
-        width: 1em !important;
-        margin: 0 0.07em !important;
-        vertical-align: -0.1em !important;
-        background: none !important;
-        padding: 0 !important;
-      }
-    </style>
-    <style id="classic-theme-styles-inline-css" type="text/css">
-      /*! This file is auto-generated */
-      .wp-block-button__link {
-        color: #fff;
-        background-color: #32373c;
-        border-radius: 9999px;
-        box-shadow: none;
-        text-decoration: none;
-        padding: calc(0.667em + 2px) calc(1.333em + 2px);
-        font-size: 1.125em;
-      }
-      .wp-block-file__button {
-        background: #32373c;
-        color: #fff;
-        text-decoration: none;
-      }
-    </style>
-    <style id="global-styles-inline-css" type="text/css">
-      :root {
-        --wp--preset--aspect-ratio--square: 1;
-        --wp--preset--aspect-ratio--4-3: 4/3;
-        --wp--preset--aspect-ratio--3-4: 3/4;
-        --wp--preset--aspect-ratio--3-2: 3/2;
-        --wp--preset--aspect-ratio--2-3: 2/3;
-        --wp--preset--aspect-ratio--16-9: 16/9;
-        --wp--preset--aspect-ratio--9-16: 9/16;
-        --wp--preset--color--black: #000000;
-        --wp--preset--color--cyan-bluish-gray: #abb8c3;
-        --wp--preset--color--white: #ffffff;
-        --wp--preset--color--pale-pink: #f78da7;
-        --wp--preset--color--vivid-red: #cf2e2e;
-        --wp--preset--color--luminous-vivid-orange: #ff6900;
-        --wp--preset--color--luminous-vivid-amber: #fcb900;
-        --wp--preset--color--light-green-cyan: #7bdcb5;
-        --wp--preset--color--vivid-green-cyan: #00d084;
-        --wp--preset--color--pale-cyan-blue: #8ed1fc;
-        --wp--preset--color--vivid-cyan-blue: #0693e3;
-        --wp--preset--color--vivid-purple: #9b51e0;
-        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
-          135deg,
-          rgba(6, 147, 227, 1) 0%,
-          rgb(155, 81, 224) 100%
-        );
-        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
-          135deg,
-          rgb(122, 220, 180) 0%,
-          rgb(0, 208, 130) 100%
-        );
-        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
-          135deg,
-          rgba(252, 185, 0, 1) 0%,
-          rgba(255, 105, 0, 1) 100%
-        );
-        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
-          135deg,
-          rgba(255, 105, 0, 1) 0%,
-          rgb(207, 46, 46) 100%
-        );
-        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
-          135deg,
-          rgb(238, 238, 238) 0%,
-          rgb(169, 184, 195) 100%
-        );
-        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
-          135deg,
-          rgb(74, 234, 220) 0%,
-          rgb(151, 120, 209) 20%,
-          rgb(207, 42, 186) 40%,
-          rgb(238, 44, 130) 60%,
-          rgb(251, 105, 98) 80%,
-          rgb(254, 248, 76) 100%
-        );
-        --wp--preset--gradient--blush-light-purple: linear-gradient(
-          135deg,
-          rgb(255, 206, 236) 0%,
-          rgb(152, 150, 240) 100%
-        );
-        --wp--preset--gradient--blush-bordeaux: linear-gradient(
-          135deg,
-          rgb(254, 205, 165) 0%,
-          rgb(254, 45, 45) 50%,
-          rgb(107, 0, 62) 100%
-        );
-        --wp--preset--gradient--luminous-dusk: linear-gradient(
-          135deg,
-          rgb(255, 203, 112) 0%,
-          rgb(199, 81, 192) 50%,
-          rgb(65, 88, 208) 100%
-        );
-        --wp--preset--gradient--pale-ocean: linear-gradient(
-          135deg,
-          rgb(255, 245, 203) 0%,
-          rgb(182, 227, 212) 50%,
-          rgb(51, 167, 181) 100%
-        );
-        --wp--preset--gradient--electric-grass: linear-gradient(
-          135deg,
-          rgb(202, 248, 128) 0%,
-          rgb(113, 206, 126) 100%
-        );
-        --wp--preset--gradient--midnight: linear-gradient(
-          135deg,
-          rgb(2, 3, 129) 0%,
-          rgb(40, 116, 252) 100%
-        );
-        --wp--preset--font-size--small: 13px;
-        --wp--preset--font-size--medium: 20px;
-        --wp--preset--font-size--large: 36px;
-        --wp--preset--font-size--x-large: 42px;
-        --wp--preset--spacing--20: 0.44rem;
-        --wp--preset--spacing--30: 0.67rem;
-        --wp--preset--spacing--40: 1rem;
-        --wp--preset--spacing--50: 1.5rem;
-        --wp--preset--spacing--60: 2.25rem;
-        --wp--preset--spacing--70: 3.38rem;
-        --wp--preset--spacing--80: 5.06rem;
-        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
-        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
-        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
-          6px 6px rgba(0, 0, 0, 1);
-        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
-      }
-      :where(.is-layout-flex) {
-        gap: 0.5em;
-      }
-      :where(.is-layout-grid) {
-        gap: 0.5em;
-      }
-      body .is-layout-flex {
-        display: flex;
-      }
-      .is-layout-flex {
-        flex-wrap: wrap;
-        align-items: center;
-      }
-      .is-layout-flex > :is(*, div) {
-        margin: 0;
-      }
-      body .is-layout-grid {
-        display: grid;
-      }
-      .is-layout-grid > :is(*, div) {
-        margin: 0;
-      }
-      :where(.wp-block-columns.is-layout-flex) {
-        gap: 2em;
-      }
-      :where(.wp-block-columns.is-layout-grid) {
-        gap: 2em;
-      }
-      :where(.wp-block-post-template.is-layout-flex) {
-        gap: 1.25em;
-      }
-      :where(.wp-block-post-template.is-layout-grid) {
-        gap: 1.25em;
-      }
-      .has-black-color {
-        color: var(--wp--preset--color--black) !important;
-      }
-      .has-cyan-bluish-gray-color {
-        color: var(--wp--preset--color--cyan-bluish-gray) !important;
-      }
-      .has-white-color {
-        color: var(--wp--preset--color--white) !important;
-      }
-      .has-pale-pink-color {
-        color: var(--wp--preset--color--pale-pink) !important;
-      }
-      .has-vivid-red-color {
-        color: var(--wp--preset--color--vivid-red) !important;
-      }
-      .has-luminous-vivid-orange-color {
-        color: var(--wp--preset--color--luminous-vivid-orange) !important;
-      }
-      .has-luminous-vivid-amber-color {
-        color: var(--wp--preset--color--luminous-vivid-amber) !important;
-      }
-      .has-light-green-cyan-color {
-        color: var(--wp--preset--color--light-green-cyan) !important;
-      }
-      .has-vivid-green-cyan-color {
-        color: var(--wp--preset--color--vivid-green-cyan) !important;
-      }
-      .has-pale-cyan-blue-color {
-        color: var(--wp--preset--color--pale-cyan-blue) !important;
-      }
-      .has-vivid-cyan-blue-color {
-        color: var(--wp--preset--color--vivid-cyan-blue) !important;
-      }
-      .has-vivid-purple-color {
-        color: var(--wp--preset--color--vivid-purple) !important;
-      }
-      .has-black-background-color {
-        background-color: var(--wp--preset--color--black) !important;
-      }
-      .has-cyan-bluish-gray-background-color {
-        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-      }
-      .has-white-background-color {
-        background-color: var(--wp--preset--color--white) !important;
-      }
-      .has-pale-pink-background-color {
-        background-color: var(--wp--preset--color--pale-pink) !important;
-      }
-      .has-vivid-red-background-color {
-        background-color: var(--wp--preset--color--vivid-red) !important;
-      }
-      .has-luminous-vivid-orange-background-color {
-        background-color: var(
-          --wp--preset--color--luminous-vivid-orange
-        ) !important;
-      }
-      .has-luminous-vivid-amber-background-color {
-        background-color: var(
-          --wp--preset--color--luminous-vivid-amber
-        ) !important;
-      }
-      .has-light-green-cyan-background-color {
-        background-color: var(--wp--preset--color--light-green-cyan) !important;
-      }
-      .has-vivid-green-cyan-background-color {
-        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
-      }
-      .has-pale-cyan-blue-background-color {
-        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
-      }
-      .has-vivid-cyan-blue-background-color {
-        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-      }
-      .has-vivid-purple-background-color {
-        background-color: var(--wp--preset--color--vivid-purple) !important;
-      }
-      .has-black-border-color {
-        border-color: var(--wp--preset--color--black) !important;
-      }
-      .has-cyan-bluish-gray-border-color {
-        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-      }
-      .has-white-border-color {
-        border-color: var(--wp--preset--color--white) !important;
-      }
-      .has-pale-pink-border-color {
-        border-color: var(--wp--preset--color--pale-pink) !important;
-      }
-      .has-vivid-red-border-color {
-        border-color: var(--wp--preset--color--vivid-red) !important;
-      }
-      .has-luminous-vivid-orange-border-color {
-        border-color: var(
-          --wp--preset--color--luminous-vivid-orange
-        ) !important;
-      }
-      .has-luminous-vivid-amber-border-color {
-        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-      }
-      .has-light-green-cyan-border-color {
-        border-color: var(--wp--preset--color--light-green-cyan) !important;
-      }
-      .has-vivid-green-cyan-border-color {
-        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
-      }
-      .has-pale-cyan-blue-border-color {
-        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
-      }
-      .has-vivid-cyan-blue-border-color {
-        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-      }
-      .has-vivid-purple-border-color {
-        border-color: var(--wp--preset--color--vivid-purple) !important;
-      }
-      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-        background: var(
-          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
-        ) !important;
-      }
-      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-        background: var(
-          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
-        ) !important;
-      }
-      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-        background: var(
-          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
-        ) !important;
-      }
-      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-        background: var(
-          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
-        ) !important;
-      }
-      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-        background: var(
-          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
-        ) !important;
-      }
-      .has-cool-to-warm-spectrum-gradient-background {
-        background: var(
-          --wp--preset--gradient--cool-to-warm-spectrum
-        ) !important;
-      }
-      .has-blush-light-purple-gradient-background {
-        background: var(--wp--preset--gradient--blush-light-purple) !important;
-      }
-      .has-blush-bordeaux-gradient-background {
-        background: var(--wp--preset--gradient--blush-bordeaux) !important;
-      }
-      .has-luminous-dusk-gradient-background {
-        background: var(--wp--preset--gradient--luminous-dusk) !important;
-      }
-      .has-pale-ocean-gradient-background {
-        background: var(--wp--preset--gradient--pale-ocean) !important;
-      }
-      .has-electric-grass-gradient-background {
-        background: var(--wp--preset--gradient--electric-grass) !important;
-      }
-      .has-midnight-gradient-background {
-        background: var(--wp--preset--gradient--midnight) !important;
-      }
-      .has-small-font-size {
-        font-size: var(--wp--preset--font-size--small) !important;
-      }
-      .has-medium-font-size {
-        font-size: var(--wp--preset--font-size--medium) !important;
-      }
-      .has-large-font-size {
-        font-size: var(--wp--preset--font-size--large) !important;
-      }
-      .has-x-large-font-size {
-        font-size: var(--wp--preset--font-size--x-large) !important;
-      }
-      :where(.wp-block-post-template.is-layout-flex) {
-        gap: 1.25em;
-      }
-      :where(.wp-block-post-template.is-layout-grid) {
-        gap: 1.25em;
-      }
-      :where(.wp-block-columns.is-layout-flex) {
-        gap: 2em;
-      }
-      :where(.wp-block-columns.is-layout-grid) {
-        gap: 2em;
-      }
-      :root :where(.wp-block-pullquote) {
-        font-size: 1.5em;
-        line-height: 1.6;
-      }
-    </style>
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/wp-social/assets/css/frontend.css?ver=1726124038"
-      id="xs-front-style-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/wp-social/assets/css/font-icon.css?ver=1726124038"
-      id="xs_login_font_login_css-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css?ver=1726124038"
-      id="ppress-frontend-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css?ver=4.15.14"
-      id="ppress-flatpickr-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=6.6.3"
-      id="ppress-select2-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/ekit-headerfooter/assets/css/ekit-headerfooter.css?ver=1726124038"
-      id="ekit-hf-style-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.24.5"
-      id="elementor-frontend-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1726124038"
-      id="swiper-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.24.5"
-      id="e-swiper-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/elementor/css/post-4613.css?ver=1726124039"
-      id="elementor-post-4613-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=1726124038"
-      id="font-awesome-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/elementor/css/global.css?ver=1726124038"
-      id="elementor-global-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.24.5"
-      id="widget-image-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/elementor/css/post-4525.css?ver=1726125027"
-      id="elementor-post-4525-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/elementor/css/post-4594.css?ver=1726124038"
-      id="elementor-post-4594-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/elementor/css/post-4128.css?ver=1726124038"
-      id="elementor-post-4128-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/metform/public/assets/lib/cute-alert/style.css?ver=1726124038"
-      id="cute-alert-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/metform/public/assets/css/text-editor.css?ver=1726124038"
-      id="text-editor-style-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/themes/vinkmag/assets/css/bootstrap.min.css?ver=4.2"
-      id="bootstrap-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/themes/vinkmag/assets/css/animate.css?ver=1726124038"
-      id="animate-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/themes/vinkmag/assets/css/xs-icons.css?ver=1726124038"
-      id="vinkmag-icon-elementor-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/themes/vinkmag/assets/css/jquery.mCustomScrollbar.css?ver=1726124038"
-      id="mCustomScrollbar-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/themes/vinkmag/assets/css/magnific-popup.css?ver=1726124038"
-      id="magnific-popup-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/themes/vinkmag/assets/css/style.css?ver=1726124038"
-      id="vinkmag-style-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <style id="vinkmag-style-inline-css" type="text/css">
-      .fonts-loaded body {
-      }
-
-      .fonts-loaded h1,
-      .fonts-loaded h2,
-      .fonts-loaded h3,
-      .fonts-loaded h4,
-      .fonts-loaded h5,
-      .fonts-loaded .navbar-container .navbar .nav-item a {
-      }
-
-      .fonts-loaded .nav-menu li a,
-      .fonts-loaded .post-cat,
-      .fonts-loaded .post-list-item .nav-tabs li a,
-      .fonts-loaded .ts-social-list li b,
-      .fonts-loaded .widgets.ts-social-list-item ul li a b,
-      .fonts-loaded .footer-social li a,
-      .fonts-loaded .ts-cat-title span,
-      .fonts-loaded .view-link-btn span {
-      }
-      .body-inner-content {
-        background-color: #ffffff;
-        background-image: url();
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: cover;
-      }
-
-      /* primary background color*/
-      .top-bar .top-social li.ts-date,
-      .view-link-btn,
-      .logo,
-      .navbar-style1.navbar-container .navbar .nav-item a.active,
-      .navbar-style1.navbar-container .nav-search-button,
-      .ts-title .title-before,
-      .owl-dots .owl-dot span,
-      #breaking_slider .slider-navigation .swiper-button-prev:hover,
-      #breaking_slider .slider-navigation .swiper-button-next:hover,
-      .navbar-container.navbar-style5 .nav-item a.active:before,
-      .navbar-container.navbar-style5 .nav-item a:hover:before,
-      .navbar-container.navbar-style5 .nav-item a:focus:before,
-      .ts-newslatter .newsletter-form .ts-submit-btn .btn:hover,
-      .top-bar .ts-date-item,
-      .header-middle.v2,
-      .video-slider .post-video .ts-play-btn,
-      .top-social li.ts-subscribe,
-      .ts-title.title-bg .title-text,
-      .ts-title.title-bg .title-after,
-      .ts-widget-newsletter,
-      .ts-widget-newsletter .newsletter-form .btn:hover,
-      .header-standerd,
-      .navbar-container.navbar-style2,
-      .navbar-container.navbar-style2 .navbar,
-      .navbar-style2.navbar-container .nav-search-button,
-      .navbar-container.navbar-style3.navbar-dark .nav-item a.active,
-      .navbar-container.navbar-style3.navbar-dark .nav-item a:hover,
-      .navbar-container.navbar-style3.navbar-dark .nav-item a:focus,
-      .navbar-standerd.navbar-darks
-        .navbar-style5
-        .xs-navbar
-        .main-menu
-        > li:hover
-        > a,
-      .navbar-standerd.navbar-darks
-        .navbar-style5
-        .xs-navbar
-        .main-menu
-        > li.active
-        > a,
-      .navbar-standerd.navbar-darks
-        .navbar-style5
-        .xs-navbar
-        .main-menu
-        > li:before,
-      .single-post-wrapper .post-meta-info li.share-post a i,
-      .widget-title:before,
-      .tagcloud a:hover,
-      blockquote cite:after,
-      .error-page .error-body a,
-      .accordion-post-style .card .btn,
-      .navbar-container.navbar-style1 .navbar-nav > .current-menu-parent,
-      .widgets-newsletter-form .btn.btn-primary,
-      .pagination li.active a,
-      .pagination li:hover a,
-      .blog-navbar .navbar-container .navbar .main-menu .nav-item > a.active,
-      .blog-navbar
-        .navbar-container.navbar-style5
-        .main-menu
-        > li.current-menu-item
-        > a:before,
-      .blog-navbar .navbar-container .navbar .main-menu .nav-item > a:hover,
-      .btn.btn-primary,
-      .navbar-standerd.nav-bg-white
-        .navbar-style5
-        .navbar
-        .main-menu
-        .nav-item
-        > a.active,
-      .navbar-standerd.nav-bg-white
-        .navbar-style5
-        .navbar
-        .main-menu
-        > .nav-item
-        > a:hover,
-      .post-content-loading a:hover,
-      .instagram-area .follow-btn-area .btn:hover,
-      .post-list-item .nav-tabs li a::before,
-      .ts-search-form .vinkmag-serach:before,
-      .xs-review-overview-list.custom-rat
-        .xs-overview-percentage
-        .data-rat
-        .xs-percentange
-        .percentange_check,
-      .view-review-list .xs-review-rattting.xs-percentange .percentange_check,
-      .public-xs-review-box .xs-save-button button,
-      .featured-tab-item .featured-tab-post > li a.active .post-content,
-      .featured-tab-item .featured-tab-post > li a.active:before,
-      .woocommerce ul.products li.product .button,
-      .woocommerce ul.products li.product .added_to_cart,
-      .post-meta-info .share-post,
-      .navbar-standerd.navbar-darks
-        .navbar-style5
-        .ekit-menu-simple
-        > li.current-menu-parent
-        > a,
-      .navbar-standerd.navbar-darks
-        .navbar-style5
-        .ekit-menu-simple
-        > li.current-menu-item
-        > a,
-      .navbar-standerd.navbar-darks
-        .navbar-style5
-        .ekit-menu-simple
-        > li
-        > a:before,
-      .woocommerce nav.woocommerce-pagination ul li a:focus,
-      .woocommerce nav.woocommerce-pagination ul li a:hover,
-      .woocommerce nav.woocommerce-pagination ul li span.current,
-      .woocommerce #respond input#submit.alt,
-      .woocommerce a.button.alt,
-      .woocommerce button.button.alt,
-      .woocommerce input.button.alt,
-      .sponsor-web-link a:hover i,
-      .woocommerce .widget_price_filter .ui-slider .ui-slider-range,
-      .woocommerce span.onsale,
-      .ts-grid-box .swiper-pagination-popular-post .swiper-pagination-bullet,
-      .navbar-container.navbar-style1
-        .ekit-megamenu-holder
-        .ekit-menu
-        > li.current-menu-parent
-        > a,
-      .navbar-container.navbar-style1
-        .ekit-megamenu-holder
-        .ekit-menu
-        > li:hover
-        > a {
-        background-color: #005091;
-      }
-
-      /* primary color*/
-      .breaking-title,
-      .ts-top-nav li a:hover,
-      .post-title a:hover,
-      .swiper-button-prev,
-      .swiper-button-next,
-      .watch-post .post-list-box .post-title:hover,
-      a:hover,
-      .single-post a,
-      .navbar-container .navbar .nav-item .dropdown-menu .dropdown-item.active,
-      .navbar-container .navbar .nav-item .dropdown-menu .dropdown-item:hover,
-      .navbar-container .navbar .nav-item .dropdown-menu .dropdown-item:focus,
-      .ts-overlay-style .overlay-post-content .post-meta-info li.active,
-      .navbar-container.navbar-style5 .nav-item a.active,
-      .navbar-container.navbar-style5 .nav-item a:hover,
-      .navbar-container.navbar-style5 .nav-item a:focus,
-      .post-meta-info li.active,
-      .post-video .post-video-content .post-meta-info li.active,
-      .navbar-container.navbar-style3 .nav-item a.active,
-      .navbar-container.navbar-style3 .nav-item a:hover,
-      .navbar-container.navbar-style3 .nav-item a:focus,
-      .post-navigation .post-previous:hover span,
-      .post-navigation .post-next:hover span,
-      .breadcrumb li,
-      .woocommerce ul.products li.product .price,
-      .woocommerce ul.products li.product .woocommerce-loop-product__title,
-      .single-post a,
-      .navbar-container
-        .navbar
-        .main-menu
-        .nav-item
-        .dropdown-menu
-        > li
-        > .dropdown-item:hover,
-      .widgets ul li a:hover,
-      .ts-overlay-style .overlay-post-content .post-meta-info li a:hover,
-      .post-list-item .nav-tabs li a.active {
-        color: #005091;
-      }
-
-      /* primary dark color*/
-      .top-bar.v2,
-      .ts-widget-newsletter .newsletter-form .btn,
-      .navbar-container.navbar-style2 .nav-item a.active,
-      .navbar-container.navbar-style2 .nav-item a:hover,
-      .navbar-container.navbar-style2 .nav-item a:focus,
-      .widgets-newsletter-form .btn.btn-primary:hover,
-      .woocommerce ul.products li.product .added_to_cart:hover,
-      .woocommerce #respond input#submit.alt:hover,
-      .woocommerce a.button.alt:hover,
-      .woocommerce button.button.alt:hover,
-      .woocommerce input.button.alt:hover,
-      .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
-        background-color: #00138e;
-      }
-      .woocommerce
-        ul.products
-        li.product
-        .woocommerce-loop-product__title:hover {
-        color: #00138e;
-      }
-      .menu-toggler {
-        background-color: #00138e !important;
-      }
-      .dark-themes .body-inner-content {
-        background-color: #00138e;
-      }
-      /* border color*/
-      .tagcloud a:hover,
-      .ts-tranding-post .slider-indicators .swiper-slide-thumb-active {
-        border-color: #005091;
-      }
-
-      /*--------------- title color----------------*/
-      .post-title,
-      .post-title a,
-      .entry-title,
-      .entry-title a,
-      .elementor-widget-wp-widget-archives ul li a,
-      .recent-posts-widget ul li .post-info,
-      .ts-title,
-      .widget-title,
-      body.single-post .post-title a,
-      .post-navigation a span,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        color: #003366;
-      }
-
-      /*--------------- for dark theme ----------------*/
-
-      .dark-themes .ts-grid-box,
-      .dark-themes .archive .category-layout-1 .ts-grid-box.ts-grid-content,
-      .dark-themes.archive .category-layout-2 .ts-grid-box.ts-grid-content,
-      .dark-themes.archive .category-layout-3 .ts-grid-box.ts-grid-content,
-      .dark-themes .vinkmag-masonary-grid .card-columns .card,
-      .dark-themes .post-list-item,
-      .dark-themes .breadcrumb,
-      .dark-themes .post-content-box .post-content,
-      .dark-themes .featured-tab-item .featured-tab-post .post-content,
-      .dark-themes .ts-breaking-news,
-      .dark-themes .navbar-style1.navbar-container .navbar,
-      .dark-themes .ts-tranding-post .slider-indicators .post-content,
-      .dark-themes .ts-newslatter,
-      .dark-themes .ts-footer-social-list,
-      .dark-themes .top-bar,
-      .dark-themes .input-group-append,
-      .dark-themes .ts-grid-item-2.ts-grid-content,
-      .dark-themes .navbar-standerd.navbar-darks .navbar-style5 .xs-navbar {
-        background: #1f1f1f;
-      }
-      .dark-themes .post-title,
-      .dark-themes .post-title a,
-      .dark-themes .entry-title,
-      .dark-themes .entry-title a,
-      .dark-themes .elementor-widget-wp-widget-archives ul li a,
-      .dark-themes .recent-posts-widget ul li .post-info,
-      .dark-themes .ts-title,
-      .dark-themes .widget-title,
-      .dark-themes h1,
-      .dark-themes h2,
-      .dark-themes h3,
-      .dark-themes h4,
-      .dark-themes h5,
-      .dark-themes h6,
-      .dark-themes .post-list-item .nav-tabs li a.active,
-      .dark-themes body.single-post .post-title a,
-      .dark-themes .post-navigation a span,
-      .dark-themes .recent-posts-widget ul li .post-info .entry-title a {
-        color: #ffffff;
-      }
-      .dark-themes .single-post-wrapper p,
-      .dark-themes body,
-      .dark-themes p,
-      .dark-themes .widgets ul li a,
-      .dark-themes
-        .apsc-theme-2
-        .apsc-each-profile
-        a
-        .apsc-inner-block
-        .apsc-count,
-      .dark-themes .entry-content ul li,
-      .dark-themes .post-meta-info li.author a,
-      .dark-themes .breadcrumb li a,
-      .dark-themes .post-content p,
-      .dark-themes .tagcloud strong,
-      .dark-themes .post-meta-info li,
-      .dark-themes .ts-breaking-news p a {
-        color: #1f1f1f;
-      }
-      .dark-themes .ts-tranding-post .slider-indicators {
-        background: #1f1f1f;
-      }
-    </style>
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/themes/vinkmag/assets/css/responsive.css?ver=1726124038"
-      id="vinkmag-responsive-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/ekit-headerfooter/elements/widgets/nav-menu/assets/css/smartmenus.css?ver=1726124038"
-      id="smartmenus-ekit-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/ekit-megamenu/assets/css/smartmenus.css?ver=1726124038"
-      id="smartmenus-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <style id="smartmenus-inline-css" type="text/css">
-      /* Switch to desktop layout
-	-----------------------------------------------
-	   These transform the menu tree from
-	   collapsible to desktop (navbar + dropdowns)
-	-----------------------------------------------*/ /* start... (it's not recommended editing these rules) */
-      .navbar.xs-navbar ul > li > ul .elementor-widget-container a {
-        background-color: transparent !important;
-        line-height: 2.5 !important;
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-      .ekit-megamenu-holder {
-        background: #1f2024;
-        background: linear-gradient(0deg, rgba(0, 0, 0) 0%, rgba(0, 0, 0) 100%);
-        border-bottom-right-radius: -;
-        border-bottom-left-radius: -;
-        border-top-right-radius: -;
-        border-top-left-radius: -;
-      }
-      .ekit-megamenu-holder .nav-controler {
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-      .ekit-megamenu-holder .nav-controler .navbar-toggler {
-        background-color: #333;
-        color: #1f2024;
-        cursor: pointer;
-        float: right;
-        height: 30px;
-        width: 40px;
-        padding: 5px;
-      }
-      .ekit-megamenu-holder .nav-controler .site-title {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      .ekit-megamenu-holder .nav-controler .navbar-toggler-icon {
-        height: 1px;
-        width: 100%;
-        position: relative;
-        background-color: #1f2024;
-        display: block;
-      }
-      .ekit-megamenu-holder .nav-controler .navbar-toggler-icon::before,
-      .ekit-megamenu-holder .nav-controler .navbar-toggler-icon::after {
-        position: absolute;
-        content: "";
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: inherit;
-      }
-      .ekit-megamenu-holder .nav-controler .navbar-toggler-icon::before {
-        top: 6px;
-      }
-      .ekit-megamenu-holder .nav-controler .navbar-toggler-icon::after {
-        top: -6px;
-      }
-      .ekit-megamenu-holder .clearfix::after {
-        display: block;
-        clear: both;
-        content: "";
-      }
-      .ekit-megamenu-holder .nav-identity-panel {
-        display: none;
-      }
-      .ekit-megamenu-holder .no-scroller {
-        overflow: hidden;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple {
-        position: static;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple li:hover > a {
-        background: #d33;
-        background: linear-gradient(0deg, rgba(0, 0, 0) 0%, rgba(0, 0, 0) 100%);
-        color: - !important;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple > li > a {
-        color: #fff !important;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple > li > a:hover,
-      .ekit-megamenu-holder .ekit-menu-simple > li > a:focus,
-      .ekit-megamenu-holder .ekit-menu-simple > li > a:active {
-        color: - !important;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple a {
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        text-decoration: none;
-        text-transform: capitalize;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple a:hover,
-      .ekit-megamenu-holder .ekit-menu-simple a:focus,
-      .ekit-megamenu-holder .ekit-menu-simple a:active {
-        background: #d33;
-        background: linear-gradient(0deg, rgba(0, 0, 0) 0%, rgba(0, 0, 0) 100%);
-      }
-      .ekit-megamenu-holder .ekit-menu-simple a.current {
-        background: #000;
-        color: #1f2024;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple a.disabled {
-        color: #000;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple a .sub-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 10px;
-        overflow: hidden;
-        font-size: 14px;
-        color: inherit;
-        text-align: center;
-        text-shadow: none;
-        background: transparent;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple a .sub-arrow::before {
-        content: "+";
-      }
-      .ekit-megamenu-holder .ekit-menu-simple a.highlighted .sub-arrow::before {
-        content: "-";
-      }
-      .ekit-megamenu-holder .ekit-menu-simple a .ekit-menu-badge {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        background-color: #000;
-        color: #1f2024;
-        font-size: 16px;
-        padding: 4px 8px 3px;
-        border-radius: 3px;
-        font-size: 8px;
-        line-height: 1;
-        z-index: 10;
-      }
-      .ekit-megamenu-holder
-        .ekit-menu-simple
-        a
-        .ekit-menu-badge
-        > .ekit-menu-badge-arrow {
-        position: absolute;
-        bottom: -12px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-left: solid transparent;
-        border-right: solid transparent;
-        border-top: solid #000;
-        border-bottom: solid transparent;
-        border-width: 6px;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple a > .ekit-menu-icon {
-        padding-right: 5px;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple .ekit-menu-megamenu-container {
-        background: #fff;
-        background: linear-gradient(
-          90deg,
-          rgba(0, 0, 0) 0%,
-          rgba(0, 0, 0) 100%
-        );
-        border-top: 1px solid rgba(0, 0, 0);
-        border-left: 1px solid rgba(0, 0, 0);
-        border-right: 1px solid rgba(0, 0, 0);
-        border-bottom: 1px solid rgba(0, 0, 0);
-      }
-      .ekit-megamenu-holder .ekit-menu-simple .ekit-has-submenu {
-        border-radius: 0px 0px 0px 0px;
-        background: #fff;
-        background: linear-gradient(
-          60deg,
-          rgba(0, 0, 0) 0%,
-          rgba(0, 0, 0) 100%
-        );
-        border-top: 0px solid rgba(0, 0, 0);
-        border-left: 0px solid rgba(0, 0, 0);
-        border-right: 0px solid rgba(0, 0, 0);
-        border-bottom: 0px solid rgba(0, 0, 0);
-      }
-      .ekit-megamenu-holder .ekit-menu-simple .ekit-has-submenu > li {
-        min-width: 200px;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple .ekit-has-submenu > li > a {
-        color: #000;
-        transition: all 0.4s ease;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple .ekit-has-submenu > li > a:hover {
-        color: #d72924;
-        background: #fff;
-        background: linear-gradient(
-          90deg,
-          rgba(0, 0, 0) 0%,
-          rgba(0, 0, 0) 100%
-        );
-      }
-      .ekit-megamenu-holder
-        .ekit-menu-simple
-        .ekit-has-submenu
-        > li
-        > a
-        > .sub-arrow {
-        left: inherit;
-        right: 8px;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple li {
-        border-top: 1px solid 0;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple > li:first-child {
-        border-top: 0;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple ul {
-        z-index: 100;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple ul a,
-      .ekit-megamenu-holder .ekit-menu-simple ul a:hover,
-      .ekit-megamenu-holder .ekit-menu-simple ul a:focus,
-      .ekit-megamenu-holder .ekit-menu-simple ul a:active {
-        font-size: 14px;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple .mega-menu {
-        margin-left: 0 !important;
-        right: 0 !important;
-        width: auto !important;
-        max-width: none !important;
-      }
-      .ekit-megamenu-holder .ekit-menu-simple .ekit-menu-has-megamenu {
-        position: static;
-      }
-      .menu-toggler {
-        display: none;
-        padding: 0.25rem 0.75rem;
-        font-size: 1.25rem;
-        line-height: 1;
-        background-color: transparent;
-        border: 1px solid 0;
-        border-radius: 0.25rem;
-        float: right;
-        position: relative;
-        z-index: 10;
-        cursor: pointer;
-      }
-      .menu-toggler .menu-toggler-icon {
-        display: inline-block;
-        width: 1.5em;
-        height: 1.5em;
-        vertical-align: middle;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 100% 100%;
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-      }
-      @media (max-width: 991px) {
-        .admin-bar .ekit-megamenu-holder {
-          padding-bottom: 46px;
-          padding-top: 46px;
-        }
-        .admin-bar .nav-identity-panel {
-          top: 32px;
-        }
-        .menu-toggler {
-          display: block;
-        }
-        .ekit-menu-overlay {
-          position: fixed;
-          z-index: 5;
-          top: 0;
-          left: -110%;
-          height: 100%;
-          width: 100%;
-          background-color: rgba(0, 0, 0);
-          transition: all 0.4s ease;
-          opacity: 1;
-          visibility: visible;
-          transition: all 600ms cubic-bezier(0.6, 0.1, 0.68, 0.53) 400ms;
-        }
-        .ekit-menu-overlay.active {
-          left: 0%;
-          transition: all 600ms cubic-bezier(0.22, 0.61, 0.24, 1) 0ms;
-        }
-        .ekit-megamenu-holder {
-          max-width: 320px;
-          width: 100%;
-          position: fixed;
-          top: 0;
-          left: 0;
-          z-index: 9999;
-          height: 100%;
-          box-shadow: 0px 10px 10px 0;
-          overflow-y: auto;
-          overflow-x: hidden;
-          transform: translateX(-320px);
-          padding: 20px;
-          transition: all 600ms cubic-bezier(0.6, 0.1, 0.68, 0.53) 0ms;
-        }
-        .ekit-megamenu-holder.active {
-          transform: translateX(0px);
-          transition: all 600ms cubic-bezier(0.22, 0.61, 0.24, 1) 400ms;
-        }
-        .ekit-megamenu-holder > .header-brand {
-          display: none;
-        }
-        .ekit-megamenu-holder .nav-identity-panel {
-          display: block;
-          position: absolute;
-          width: 100%;
-          top: 0;
-          left: 0;
-          padding: 20px;
-        }
-        .ekit-megamenu-holder .nav-identity-panel .site-title {
-          margin: 0px;
-          padding-top: 0px;
-          padding-bottom: 0px;
-        }
-        .ekit-megamenu-holder .nav-identity-panel .header-brand {
-          float: left;
-        }
-        .ekit-megamenu-holder .nav-identity-panel .nav-logo {
-          display: block;
-        }
-        .ekit-megamenu-holder .nav-identity-panel .nav-logo > img {
-          max-width: 200px;
-          max-height: 70px;
-        }
-        .ekit-megamenu-holder .menu-close {
-          background-color: rgba(0, 0, 0);
-          border: 0px;
-          color: #333;
-          cursor: pointer;
-          float: right;
-          margin: 4px 0;
-        }
-        .ekit-megamenu-holder .ekit-menu li {
-          position: static;
-        }
-        .ekit-megamenu-holder .ekit-menu-badge {
-          position: static !important;
-          float: right;
-          margin-right: 15px;
-        }
-        .ekit-megamenu-holder .ekit-menu-badge .ekit-menu-badge-arrow {
-          display: none;
-        }
-        .ekit-megamenu-holder #main-menu {
-          padding-top: 90px !important;
-        }
-        .ekit-megamenu-holder .navbar .navbar-toggler {
-          display: block;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple li a {
-          padding: 20px;
-          color: #000;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple .ekit-menu-megamenu-container {
-          background: #fff;
-          background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0) 0%,
-            rgba(0, 0, 0) 100%
-          );
-          border-top: 0px solid rgba(0, 0, 0);
-          border-left: 0px solid rgba(0, 0, 0);
-          border-right: 0px solid rgba(0, 0, 0);
-          border-bottom: 0px solid rgba(0, 0, 0);
-        }
-        .ekit-megamenu-holder .ekit-menu-simple .ekit-has-submenu {
-          background: #fff;
-          background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0) 0%,
-            rgba(0, 0, 0) 100%
-          );
-          border-top: 0px solid rgba(0, 0, 0);
-          border-left: 0px solid rgba(0, 0, 0);
-          border-right: 0px solid rgba(0, 0, 0);
-          border-bottom: 0px solid rgba(0, 0, 0);
-        }
-        .ekit-megamenu-holder .ekit-menu-simple .ekit-has-submenu > li > a {
-          background: #f4f4f4;
-          background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0) 0%,
-            rgba(0, 0, 0) 100%
-          );
-        }
-        .ekit-megamenu-holder .ekit-menu-simple li:hover > a,
-        .ekit-megamenu-holder .ekit-menu-simple li:active > a,
-        .ekit-megamenu-holder .ekit-menu-simple li:focus > a,
-        .ekit-megamenu-holder
-          .ekit-menu-simple
-          .ekit-has-submenu
-          > li
-          > a:hover,
-        .ekit-megamenu-holder
-          .ekit-menu-simple
-          .ekit-has-submenu
-          > li
-          > a:active,
-        .ekit-megamenu-holder
-          .ekit-menu-simple
-          .ekit-has-submenu
-          > li
-          > a:focus {
-          color: -;
-          background: -;
-          background: linear-gradient(
-            70deg,
-            rgba(0, 0, 0) 0%,
-            rgba(0, 0, 0) 100%
-          );
-        }
-        .ekit-megamenu-holder .ekit-menu-simple .menu-item > ul {
-          display: none;
-        }
-      }
-      @media (min-width: 992px) {
-        .ekit-megamenu-holder {
-          width: 100%;
-        }
-        .ekit-megamenu-holder > .header-brand {
-          line-height: 56px;
-          height: 60px;
-        }
-        .ekit-megamenu-holder > .header-brand .site-title {
-          margin-top: 0px;
-          margin-bottom: 0px;
-          margin-right: 0;
-          padding-top: 0px;
-          padding-bottom: 0px;
-        }
-        .ekit-megamenu-holder > .header-brand img {
-          max-width: 200px;
-          max-height: 70px;
-        }
-        .ekit-megamenu-holder > .header-brand .nav-logo {
-          display: block;
-        }
-        .ekit-megamenu-holder .header-brand {
-          float: right;
-          margin-left: 20px;
-          display: block;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple {
-          text-align: left;
-          float: left;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple .menu-item > ul {
-          position: absolute;
-          width: 12em;
-          display: none;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple > li {
-          display: inline-block;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple.ekit-menu-rtl li {
-          float: right;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple ul li,
-        .ekit-megamenu-holder .ekit-menu-simple.ekit-menu-rtl ul li,
-        .ekit-megamenu-holder .ekit-menu-simple.ekit-menu-vertical li {
-          float: none;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple a {
-          white-space: nowrap;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple ul a,
-        .ekit-megamenu-holder .ekit-menu-simple.ekit-menu-vertical a {
-          white-space: normal;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple .ekit-menu-nowrap > li > a,
-        .ekit-megamenu-holder
-          .ekit-menu-simple
-          .ekit-menu-nowrap
-          > li
-          > :not(ul)
-          a {
-          white-space: nowrap; /* ...end */
-        }
-        .ekit-megamenu-holder .ekit-menu-simple {
-          height: 60px;
-          padding-left: -;
-          padding-right: -;
-          padding-left: -;
-          padding-right: -;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple li {
-          height: 100%;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple li > a {
-          line-height: 60px;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple a {
-          padding: 0px 20px;
-          color: #fff;
-          height: 100%;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple a:hover,
-        .ekit-megamenu-holder .ekit-menu-simple a:focus,
-        .ekit-megamenu-holder .ekit-menu-simple a:active,
-        .ekit-megamenu-holder .ekit-menu-simple a.highlighted {
-          color: -;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple a.current {
-          background: #000;
-          color: #1f2024;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple a.disabled {
-          background: #1f2024;
-          color: #000;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple a.has-submenu {
-          padding-right: 32px;
-        }
-        .ekit-megamenu-holder
-          .ekit-menu-simple
-          a.highlighted
-          .sub-arrow::before {
-          content: "+";
-        }
-        .ekit-megamenu-holder .ekit-menu-simple > li {
-          border-top: 0;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple ul a.has-submenu {
-          padding-right: 20px;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple ul a .sub-arrow {
-          left: 3px;
-          right: auto;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple ul > li {
-          border-left: 0;
-          border-top: 1px solid #101012;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple ul > li:first-child {
-          border-top: 0;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple .scroll-up,
-        .ekit-megamenu-holder .ekit-menu-simple .scroll-down {
-          position: absolute;
-          display: none;
-          visibility: hidden;
-          overflow: hidden;
-          background: #1f2024;
-          height: 20px;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple .scroll-up-arrow,
-        .ekit-megamenu-holder .ekit-menu-simple .scroll-down-arrow {
-          position: absolute;
-          top: -2px;
-          left: 50%;
-          margin-left: -8px;
-          width: 0;
-          height: 0;
-          overflow: hidden;
-          border-width: 8px;
-          border-style: dashed dashed solid dashed;
-          border-color: transparent transparent #000 transparent;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple .scroll-down-arrow {
-          top: 6px;
-          border-style: solid dashed dashed dashed;
-          border-color: #000 transparent transparent transparent;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple.ekit-menu-rtl a.has-submenu {
-          padding-right: 20px;
-          padding-left: 32px;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple.ekit-menu-rtl a .sub-arrow {
-          left: 20px;
-          right: auto;
-        }
-        .ekit-megamenu-holder
-          .ekit-menu-simple.ekit-menu-rtl.ekit-menu-vertical
-          a.has-submenu {
-          padding: 60px - 14px * /2 20px;
-        }
-        .ekit-megamenu-holder
-          .ekit-menu-simple.ekit-menu-rtl.ekit-menu-vertical
-          a
-          .sub-arrow {
-          left: auto;
-          right: 8px;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple.ekit-menu-rtl > li:first-child {
-          border-left: 1px solid #101012;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple.ekit-menu-rtl > li:last-child {
-          border-left: 0;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple.ekit-menu-rtl ul a.has-submenu {
-          padding: 60px - 14px * /2 20px;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple.ekit-menu-rtl ul a .sub-arrow {
-          left: auto;
-          right: 8px;
-        }
-        .ekit-megamenu-holder
-          .ekit-menu-simple.ekit-menu-vertical
-          a
-          .sub-arrow {
-          left: 8px;
-          right: auto;
-        }
-        .ekit-megamenu-holder .ekit-menu-simple.ekit-menu-vertical li {
-          border-left: 0;
-          border-top: 1px solid #101012;
-        }
-        .ekit-megamenu-holder
-          .ekit-menu-simple.ekit-menu-vertical
-          > li:first-child {
-          border-top: 0;
-        }
-        .ekit-megamenu-holder .ekit-menu-megamenu-container {
-          box-shadow: 0px 10px 30px 0px rgba(0, 0, 0);
-        }
-        .ekit-megamenu-holder .ekit-has-submenu {
-          box-shadow: 0px 10px 30px 0px rgba(0, 0, 0);
-        }
-        .ekit-megamenu-holder .ekit-has-submenu > li > a {
-          padding-top: 15px;
-          padding-left: 10px;
-          padding-bottom: 15px;
-          padding-right: 10px;
-          line-height: normal;
-        }
-        .ekit-megamenu-holder #main-menu .hide-animation {
-          animation: hide-animation 300ms cubic-bezier(0.22, 0.61, 0.24, 1);
-        }
-        .ekit-megamenu-holder #main-menu .show-animation {
-          animation: show-animation 300ms cubic-bezier(0.22, 0.61, 0.24, 1);
-        }
-        .ekit-megamenu-holder .navbar .navbar-toggler {
-          display: none;
-        }
-        .rtl
-          .ekit-megamenu-holder
-          .navbar-container
-          .ekit-menu-simple
-          a
-          .sub-arrow {
-          right: auto;
-          left: 10px;
-        }
-        .rtl
-          .ekit-megamenu-holder
-          .navbar-container
-          .ekit-menu-simple
-          a.has-submenu {
-          padding-left: 32px;
-        }
-        .rtl
-          .ekit-megamenu-holder
-          .navbar-container
-          .ekit-menu-simple
-          .ekit-has-submenu
-          > li
-          > a {
-          text-align: right;
-        }
-        .rtl .ekit-megamenu-holder .ekit-menu,
-        .rtl .ekit-megamenu-holder .ekit-menu ul,
-        .rtl .ekit-megamenu-holder .ekit-menu li {
-          direction: rtl;
-        }
-      }
-      .post--tab {
-        display: flex;
-      }
-      .post--tab .tabHeader {
-        flex: 0 0 15%;
-      }
-      .post--tab .tabHeader .tab__list {
-        list-style: none;
-        padding-left: 0px;
-      }
-      .post--tab .tabHeader .tab__list > .tab__list__item {
-        font-size: 14px;
-        color: #232323;
-        border: none;
-        padding: 14px 16px 14px 30px;
-        cursor: pointer;
-        background-color: #fff;
-        transition: all 0.5s ease;
-        display: block;
-      }
-      .post--tab .tabHeader .tab__list > .tab__list__item.active,
-      .post--tab .tabHeader .tab__list > .tab__list__item:hover {
-        color: #d72924;
-        background-color: #f0f1f4;
-      }
-      .post--tab .tabContent {
-        flex: 0 0 85%;
-      }
-      .ekit--tab__post__details {
-        border-left: 1px solid #f0f1f4;
-        border-left: 1px solid #f0f1f4;
-      }
-      .ekit--tab__post__details .tabItem {
-        display: none;
-        animation: hide-fadeout 600ms ease-out;
-      }
-      .ekit--tab__post__details .tabItem.active {
-        display: block;
-        animation: show-fadein 600ms ease-in;
-      }
-      .ekit--tab__post__details .tab__post__single--item {
-        border-top: 0px;
-        width: 33.33333%;
-        padding-left: 15px;
-        padding-right: 15px;
-        display: inline-block;
-        float: left;
-      }
-      .ekit--tab__post__details .tab__post__single--item.ekit___column-2 {
-        width: 50%;
-      }
-      .ekit--tab__post__details .tab__post__single--item.ekit___column-4 {
-        width: 25%;
-      }
-      .ekit--tab__post__details
-        .tab__post__single--item:hover
-        .tab__post--header
-        > img {
-        transform: scale(1.2);
-      }
-      .ekit--tab__post__details .tab__post--header {
-        position: relative;
-        overflow: hidden;
-        display: block;
-        margin-bottom: 20px;
-        padding-left: 0;
-        padding-right: 0;
-      }
-      .ekit--tab__post__details .tab__post--header > img {
-        transition: all 0.4s ease-in-out;
-      }
-      .ekit--tab__post__details .tab__post--header .tab__post--icon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 5;
-      }
-      .ekit--tab__post__details .tab__post--header .tab__post--icon > span {
-        color: #fff;
-        font-size: 48px;
-      }
-      .ekit--tab__post__details .tab__post--title {
-        font-size: 15px;
-        font-weight: 500;
-        color: #232323;
-      }
-      .ekit--tab__post__details .tab__post--title > a {
-        color: inherit;
-        line-height: inherit;
-        padding-left: 0;
-        padding-right: 0;
-      }
-      .clearfix::after {
-        display: block;
-        content: "";
-        clear: both;
-      }
-      .post--lists {
-        list-style: none;
-        padding-left: 0px;
-      }
-      .post--lists > li {
-        border: none !important;
-      }
-      .post--lists > li > a {
-        padding: 8px 16px;
-        line-height: normal;
-        transition: all 0.4s ease;
-      }
-      .post--lists.vertical--list > li {
-        float: left;
-        margin-right: 16px;
-      }
-      .post--lists.vertical--list > li > a {
-        padding-left: 0;
-        padding-right: 0;
-      }
-      @keyframes show-fadein {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-      @keyframes hide-fadeout {
-        /* show animation */
-        0% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
-      @keyframes show-animation {
-        /* hide animation */
-        0% {
-          transform: translateY(20px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateY(0px);
-        }
-      }
-      @keyframes hide-animation {
-        0% {
-          transform: translateY(0px);
-        }
-        100% {
-          transform: translateY(20px);
-          opacity: 0;
-        }
-      }
-    </style>
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/ekit-megamenu/assets/css/frontend-style.css?ver=1726124038"
-      id="ekit-menu-style-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <style id="rocket-lazyload-inline-css" type="text/css">
-      .rll-youtube-player {
-        position: relative;
-        padding-bottom: 56.23%;
-        height: 0;
-        overflow: hidden;
-        max-width: 100%;
-      }
-      .rll-youtube-player:focus-within {
-        outline: 2px solid currentColor;
-        outline-offset: 5px;
-      }
-      .rll-youtube-player iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 100;
-        background: 0 0;
-      }
-      .rll-youtube-player img {
-        bottom: 0;
-        display: block;
-        left: 0;
-        margin: auto;
-        max-width: 100%;
-        width: 100%;
-        position: absolute;
-        right: 0;
-        top: 0;
-        border: none;
-        height: auto;
-        -webkit-transition: 0.4s all;
-        -moz-transition: 0.4s all;
-        transition: 0.4s all;
-      }
-      .rll-youtube-player img:hover {
-        -webkit-filter: brightness(75%);
-      }
-      .rll-youtube-player .play {
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        position: absolute;
-        background: url(https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/plugins/wp-rocket/assets/img/youtube.png)
-          no-repeat center;
-        background-color: transparent !important;
-        cursor: pointer;
-        border: none;
-      }
-    </style>
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-json/"
-      rel="https://api.w.org/" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-json/wp/v2/pages/4525"
-      rel="alternate"
-      title="JSON"
-      type="application/json" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/xmlrpc.php?rsd"
-      rel="EditURI"
-      title="RSD"
-      type="application/rsd+xml" />
-    <meta content="WordPress 6.6.3" name="generator" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/"
-      rel="canonical" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/"
-      rel="shortlink" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.xpeedstudio.com%2Fvinkmag%2Fvink-news%2F"
-      rel="alternate"
-      title="oEmbed (JSON)"
-      type="application/json+oembed" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.xpeedstudio.com%2Fvinkmag%2Fvink-news%2F&amp;format=xml"
-      rel="alternate"
-      title="oEmbed (XML)"
-      type="text/xml+oembed" />
-    <meta
-      content="Elementor 3.24.5; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto"
-      name="generator" />
-    <style>
-      .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload),
-      .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload)
-        * {
-        background-image: none !important;
-      }
-      @media screen and (max-height: 1024px) {
-        .e-con.e-parent:nth-of-type(n + 3):not(.e-lazyloaded):not(
-            .e-no-lazyload
-          ),
-        .e-con.e-parent:nth-of-type(n + 3):not(.e-lazyloaded):not(
-            .e-no-lazyload
-          )
-          * {
-          background-image: none !important;
-        }
-      }
-      @media screen and (max-height: 640px) {
-        .e-con.e-parent:nth-of-type(n + 2):not(.e-lazyloaded):not(
-            .e-no-lazyload
-          ),
-        .e-con.e-parent:nth-of-type(n + 2):not(.e-lazyloaded):not(
-            .e-no-lazyload
-          )
-          * {
-          background-image: none !important;
-        }
-      }
-    </style>
-    <style type="text/css">
-      body {
-        font-family: "Arimo";
-        color: ;
-        font-style: regular;
-        line-height: px;
-        letter-spacing: px;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Heebo";
-        color: ;
-        font-style: 500;
-        font-size: 15px;
-        line-height: px;
-        letter-spacing: px;
-      }
-    </style>
-    <style id="wp-custom-css" type="text/css">
-      .elementor-widget-wp-widget-archives h5 {
-        color: #036;
-      }
-
-      .vinkgmag-grid-posts {
-        margin-bottom: 25px;
-        border-bottom: 1px solid #ececec;
-      }
-
-      .post-title.md {
-        font-size: 18px;
-      }
-
-      .menu li a {
-        line-height: 32px;
-      }
-
-      @media (min-width: 768px) {
-        .vinkmag-post-list .post-list .row .col-md-4,
-        .vinkmag-post-list .post-list .row .col-md-8 {
-          flex: 0 0 50%;
-          max-width: 50%;
-        }
-      }
-      @media (max-width: 768px) {
-        .vinkgmag-grid-posts .ts-grid-box:last-of-type {
-          margin-bottom: 0;
-        }
-      }
-      .post-cat {
-        left: 0;
-      }
-      span.post-tag,
-      .post-title {
-        font-weight: 600;
-      }
-
-      .fa-facebook-f:before {
-        content: "\f39e";
-      }
-      .elementor-widget-vinazine-hot-post,
-      .elementor-widget-vinazine-featured-post,
-      .single-post-popular-slider,
-      .elementor-widget-vinazine-more-post-two,
-      .elementor-widget-vinazine-more-post2,
-      .elementor-widget-vinazine-more-post,
-      .elementor-widget-vinazine-popular-post,
-      .elementor-widget-vinazine-trending-post,
-      .vinazine-featured-post,
-      .ts-breaking-news {
-        overflow: hidden;
-      }
-    </style>
-    <noscript>
-      <style id="rocket-lazyload-nojs-css">
-        .rll-youtube-player,
-        [data-lazy-src] {
-          display: none !important;
-        }
-      </style>
-    </noscript>
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/2018/12/07/vontae-davis-quit-on-the-bills-at-halftime-changed-into/"
-      rel="prefetch" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/tag/travel/"
-      rel="prefetch" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/2018/04/08/the-clock-is-ticking-for-e-cig-companies-underage-users-2/"
-      rel="prefetch" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/2018/08/14/backward-leg-allows-young-cancer-survivor-to-dance-4/"
-      rel="prefetch" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/2018/09/14/kindole-oreo-stuffed-chocolate-chip-cookies-free-3/"
-      rel="prefetch" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/2017/01/07/netcix-cuts-out-the-chill-with-an-integrated-personal/"
-      rel="prefetch" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News & Videos</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
-  <body
-    class="home page-template page-template-elementor_header_footer page page-id-4525 ekit-hf-header ekit-hf-footer ekit-hf-template-vinkmag ekit-hf-stylesheet-vinkmag-child body-inner-content box-shadow-enebled sidebar-active elementor-default elementor-template-full-width elementor-kit-4613 elementor-page elementor-page-4525 e--ua-blink e--ua-chrome e--ua-webkit"
-    data-elementor-device-mode="tablet">
-    <div class="hidden loaded" id="preloader">
-      <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-      </div>
-      <div class="preloader-cancel-btn-wraper">
-        <a class="btn btn-primary preloader-cancel-btn" href="#">
-          Cancel Preloader
-        </a>
-      </div>
-    </div>
-    <header id="ekit-header">
-      <div
-        class="elementor elementor-4594"
-        data-elementor-id="4594"
-        data-elementor-type="wp-post">
-        <section
-          class="elementor-section elementor-top-section elementor-element elementor-element-c23f71c elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-          data-element_type="section"
-          data-id="c23f71c"
-          data-settings='{"background_background":"classic"}'>
-          <div class="elementor-container elementor-column-gap-default">
-            <div
-              class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4728f3d"
-              data-element_type="column"
-              data-id="4728f3d">
-              <div class="elementor-widget-wrap elementor-element-populated">
-                <div
-                  class="elementor-element elementor-element-d2bd0ca elementor-widget elementor-widget-ekit-nav-menu"
-                  data-element_type="widget"
-                  data-id="d2bd0ca"
-                  data-widget_type="ekit-nav-menu.default">
-                  <div class="elementor-widget-container">
-                    <button class="menu-toggler">
-                      <span class="menu-toggler-icon"> </span>
-                    </button>
-                    <div
-                      class="ekit-menu-container ekit-menu-po-left"
-                      id="ekit-megamenu-main-menu">
-                      <ul
-                        class="ekit-menu ekit-menu-simple ekit-menu-init"
-                        data-smartmenus-id="17573286014613745"
-                        id="main-menu">
-                        <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4525 current_page_item menu-item-4595 nav-item active"
-                          id="menu-item-4595">
-                          <a class="ekit-menu-nav-link active" href="#">
-                            Home
-                          </a>
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3809 nav-item"
-                          id="menu-item-3809">
-                          <a class="ekit-menu-nav-link" href="#"> world </a>
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4578 nav-item"
-                          id="menu-item-4578">
-                          <a class="ekit-menu-nav-link" href="#"> people </a>
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4580 nav-item"
-                          id="menu-item-4580">
-                          <a class="ekit-menu-nav-link" href="#"> politics </a>
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3811 nav-item"
-                          id="menu-item-3811">
-                          <a class="ekit-menu-nav-link" href="#"> Video </a>
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4579 nav-item"
-                          id="menu-item-4579">
-                          <a class="ekit-menu-nav-link" href="#"> sports </a>
-                        </li>
-                        <li
-                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4411 nav-item ekit-menu-dropdown"
-                          id="menu-item-4411">
-                          <a
-                            aria-controls="sm-1757328601456009-2"
-                            aria-expanded="false"
-                            aria-haspopup="true"
-                            class="ekit-menu-nav-link ekit-menu-dropdown-toggle has-submenu"
-                            href="#"
-                            id="sm-1757328601456009-1">
-                            Features
-                            <span class="sub-arrow"> </span>
-                          </a>
-                          <ul
-                            aria-expanded="false"
-                            aria-hidden="true"
-                            aria-labelledby="sm-1757328601456009-1"
-                            class="ekit-has-submenu"
-                            id="sm-1757328601456009-2"
-                            role="group">
-                            <li
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2913 nav-item ekit-menu-dropdown"
-                              id="menu-item-2913">
-                              <a
-                                aria-controls="sm-1757328601456009-4"
-                                aria-expanded="false"
-                                aria-haspopup="true"
-                                class="dropdown-item has-submenu"
-                                href="#"
-                                id="sm-1757328601456009-3">
-                                Category Layout
-                              </a>
-                              <ul
-                                aria-expanded="false"
-                                aria-hidden="true"
-                                aria-labelledby="sm-1757328601456009-3"
-                                class="ekit-has-submenu"
-                                id="sm-1757328601456009-4"
-                                role="group">
-                                <li
-                                  class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4592 nav-item"
-                                  id="menu-item-4592">
-                                  <a class="dropdown-item" href="#">
-                                    Category style 1
-                                  </a>
-                                </li>
-                                <li
-                                  class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4593 nav-item"
-                                  id="menu-item-4593">
-                                  <a class="dropdown-item" href="#">
-                                    Category style 2
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2922 nav-item ekit-menu-dropdown"
-                              id="menu-item-2922">
-                              <a
-                                aria-controls="sm-1757328601456009-6"
-                                aria-expanded="false"
-                                aria-haspopup="true"
-                                class="dropdown-item has-submenu"
-                                href="#"
-                                id="sm-1757328601456009-5">
-                                Post Formats
-                              </a>
-                              <ul
-                                aria-expanded="false"
-                                aria-hidden="true"
-                                aria-labelledby="sm-1757328601456009-5"
-                                class="ekit-has-submenu"
-                                id="sm-1757328601456009-6"
-                                role="group">
-                                <li
-                                  class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4590 nav-item"
-                                  id="menu-item-4590">
-                                  <a class="dropdown-item" href="#">
-                                    Post style 1
-                                  </a>
-                                </li>
-                                <li
-                                  class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4591 nav-item"
-                                  id="menu-item-4591">
-                                  <a class="dropdown-item" href="#">
-                                    Post style 2
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                            <li
-                              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4410 nav-item ekit-menu-dropdown"
-                              id="menu-item-4410">
-                              <a
-                                aria-controls="sm-1757328601456009-8"
-                                aria-expanded="false"
-                                aria-haspopup="true"
-                                class="dropdown-item has-submenu"
-                                href="#"
-                                id="sm-1757328601456009-7">
-                                Pages
-                              </a>
-                              <ul
-                                aria-expanded="false"
-                                aria-hidden="true"
-                                aria-labelledby="sm-1757328601456009-7"
-                                class="ekit-has-submenu"
-                                id="sm-1757328601456009-8"
-                                role="group">
-                                <li
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3904 nav-item"
-                                  id="menu-item-3904">
-                                  <a class="dropdown-item" href="#"> Author </a>
-                                </li>
-                                <li
-                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2974 nav-item"
-                                  id="menu-item-2974">
-                                  <a class="dropdown-item" href="#"> 404 </a>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                      <div class="nav-identity-panel">
-                        <button class="menu-close" type="button">X</button>
-                      </div>
-                    </div>
-                    <div class="ekit-menu-overlay"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-70803fc"
-              data-element_type="column"
-              data-id="70803fc">
-              <div class="elementor-widget-wrap elementor-element-populated">
-                <div
-                  class="elementor-element elementor-element-a6a8fa0 elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-vinazine-nav-search"
-                  data-element_type="widget"
-                  data-id="a6a8fa0"
-                  data-widget_type="vinazine-nav-search.default">
-                  <div class="elementor-widget-container">
-                    <div class="header-search-icon">
-                      <a
-                        class="navsearch-button nav-search-button xs-modal-popup"
-                        href="#">
-                        <i class="xsicon xsicon-search"> </i>
-                      </a>
-                    </div>
-                    <div
-                      class="zoom-anim-dialog mfp-hide modal-searchPanel ts-search-form"
-                      id="modal-popup-2">
-                      <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                          <div class="xs-search-panel">
-                            <form
-                              action="https://demo.xpeedstudio.com/vinkmag/vink-news/"
-                              class="vinkmag-serach"
-                              method="get">
-                              <div class="input-group">
-                                <input
-                                  class="form-control text-center"
-                                  name="s"
-                                  placeholder="Type and hit ENTER"
-                                  type="search"
-                                  value="" />
-                                <div class="input-group-append">
-                                  <span
-                                    class="nav-search-close-button header-search-btn-toggle d-none"
-                                    tabindex="0">
-                                    ✕
-                                  </span>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+  <body>
+    <header class="navbar">
+      <div class="logo">YOUR LOGO</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <div
-      class="elementor elementor-4525"
-      data-elementor-id="4525"
-      data-elementor-type="wp-post">
-      <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-8905b12 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-element_type="section"
-        data-id="8905b12">
-        <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7a2627b"
-            data-element_type="column"
-            data-id="7a2627b">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-d041d90 elementor-widget elementor-widget-vinazine-post-list"
-                data-element_type="widget"
-                data-id="d041d90"
-                data-widget_type="vinazine-post-list.default">
-                <div class="elementor-widget-container">
-                  <div
-                    class="widgets ts-grid-box widgets-populer-post grid-no-shadow">
-                    <h2 class="ts-title block-title-style1">
-                      <span class="title-before"> </span>
-                      Breaking News
-                    </h2>
-                    <div class="item vinkgmag-grid-posts grid-md">
-                      <div
-                        class="post-170 post type-post status-publish format-standard has-post-thumbnail hentry category-people category-politics category-sports category-world tag-people tag-politics tag-technology tag-travel">
-                        <div class="ts-grid-box ts-grid-content grid-no-shadow">
-                          <a
-                            class="post-cat"
-                            href="#"
-                            style="
-                              color: #ffffff;
-                              background-color: #dd3333;
-                              border-left-color: #dd3333;
-                            ">
-                            people
-                          </a>
-                          <div class="ts-post-thumb">
-                            <a href="#"> </a>
-                          </div>
-                          <div class="post-content">
-                            <h3 class="post-title">
-                              <a href="#">
-                                Netcix integrated personal cuts out the chill
-                                with an
-                              </a>
-                            </h3>
-                            <ul class="post-meta-info"></ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #dd3333"> people </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> Theye back return to you... </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #dd3333"> people </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#">
-                            Marriott has new rewards offerings...
-                          </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #d72924"> politics </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#">
-                            Clock is companies underage ticking...
-                          </a>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-c1dc90e elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-image"
-                data-element_type="widget"
-                data-id="c1dc90e"
-                data-widget_type="image.default">
-                <div class="elementor-widget-container"></div>
-              </div>
-              <div
-                class="elementor-element elementor-element-bc9d254 elementor-widget elementor-widget-wp-widget-archives"
-                data-element_type="widget"
-                data-id="bc9d254"
-                data-widget_type="wp-widget-archives.default">
-                <div class="elementor-widget-container">
-                  <h5>Archives</h5>
-                  <ul>
-                    <li>
-                      <a href="#"> December 2018 </a>
-                    </li>
-                    <li>
-                      <a href="#"> September 2018 </a>
-                    </li>
-                    <li>
-                      <a href="#"> August 2018 </a>
-                    </li>
-                    <li>
-                      <a href="#"> April 2018 </a>
-                    </li>
-                    <li>
-                      <a href="#"> March 2018 </a>
-                    </li>
-                    <li>
-                      <a href="#"> January 2017 </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+
+    <main>
+      <!-- 3 Column Layout -->
+      <div class="three-column-grid">
+        <!-- Left Sidebar -->
+        <div class="content-left">
+          <div class="sidebar">
+            <div class="ad-placeholder">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                atque maxime officiis ea facere minima, nobis inventore eligendi
+                nulla excepturi assumenda quo sint magni commodi!
+              </p>
+            </div>
+
+            <div class="archives-section">
+              <h4>Archives</h4>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-caret-right"></i> December 2018</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-caret-right"></i> September 2018</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-caret-right"></i> August 2018</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-caret-right"></i> April 2018</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-caret-right"></i> March 2018</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-caret-right"></i> January 2017</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-          <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-dda3a24"
-            data-element_type="column"
-            data-id="dda3a24">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-1d70a26 gadget-thumbnail-height elementor-widget elementor-widget-vinazine-post-grid"
-                data-element_type="widget"
-                data-id="1d70a26"
-                data-widget_type="vinazine-post-grid.default">
-                <div class="elementor-widget-container">
-                  <div class="grid-item grid-md grid-no-desc">
-                    <div
-                      class="ts-overlay-style featured-post swiper-slide post-3718 post type-post status-publish format-standard has-post-thumbnail hentry category-politics category-sports tag-sports">
-                      <div
-                        class="item item-before"
-                        style="
-                          background-image: url(https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/12/feature3.jpg);
-                        ">
-                        <div class="gradient-overlay"></div>
-                        <a class="img-link" href="#"> </a>
-                        <div class="ts-post-thumb">
-                          <a
-                            class="post-cat"
-                            href="#"
-                            style="
-                              color: #ffffff;
-                              background-color: #d72924;
-                              border-left-color: #d72924;
-                            ">
-                            politics
-                          </a>
-                        </div>
-                        <div class="overlay-post-content">
-                          <div class="post-content">
-                            <h3 class="post-title">
-                              <a href="#">
-                                Clock is companies underage ticking for e-cig
-                                users Economic
-                              </a>
-                            </h3>
-                            <ul class="post-meta-info">
-                              <li class="author">
-                                <a href="#"> Vinkmag </a>
-                              </li>
-                              <li>
-                                <i class="xsicon xsicon-clock"> </i>
-                                April 8, 2018
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+          <div class="featured-post-section">
+            <h2>Featured Posts</h2>
+            <div class="featured-post">
+              <div class="post-image-large">
+                <img
+                  src="https://images.unsplash.com/photo-1549488344-934d40026e63?q=80&w=700&h=400&fit=crop"
+                  alt="Featured Post Image" />
               </div>
-              <div
-                class="elementor-element elementor-element-aa490ec vinkmag-post-list elementor-widget elementor-widget-vinazine-post-list"
-                data-element_type="widget"
-                data-id="aa490ec"
-                data-widget_type="vinazine-post-list.default">
-                <div class="elementor-widget-container">
-                  <div class="post-list grid-sm">
-                    <div class="grid-sm vink-post-list">
-                      <div
-                        class="row mb-10 post-180 post type-post status-publish format-standard has-post-thumbnail hentry category-sports category-world tag-fitness">
-                        <div class="col-md-4">
-                          <div class="ts-post-thumb">
-                            <a
-                              class="post-cat"
-                              href="#"
-                              style="
-                                color: #ffffff;
-                                background-color: #d72924;
-                                border-left-color: #d72924;
-                              ">
-                              sports
-                            </a>
-                            <a href="#"> </a>
-                          </div>
-                        </div>
-                        <div class="col-md-8">
-                          <div class="post-content">
-                            <h3 class="post-title md">
-                              <a href="#">
-                                10 critical points from epic security manifesto
-                                inability
-                              </a>
-                            </h3>
-                            <ul class="post-meta-info">
-                              <li>
-                                <i class="xsicon xsicon-clock"> </i>
-                                December 10, 2018
-                              </li>
-                            </ul>
-                            <p>
-                              Black farmers in the US’s South faced with
-                              continued failure
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="grid-sm vink-post-list">
-                      <div
-                        class="row mb-10 post-220 post type-post status-publish format-standard has-post-thumbnail hentry category-people tag-fashion tag-music tag-recipe tag-sports">
-                        <div class="col-md-4">
-                          <div class="ts-post-thumb">
-                            <a
-                              class="post-cat"
-                              href="#"
-                              style="
-                                color: #ffffff;
-                                background-color: #dd3333;
-                                border-left-color: #dd3333;
-                              ">
-                              people
-                            </a>
-                            <a href="#"> </a>
-                          </div>
-                        </div>
-                        <div class="col-md-8">
-                          <div class="post-content">
-                            <h3 class="post-title md">
-                              <a href="#">
-                                Success humble is good not teacher failure makes
-                                you
-                              </a>
-                            </h3>
-                            <ul class="post-meta-info">
-                              <li>
-                                <i class="xsicon xsicon-clock"> </i>
-                                December 10, 2018
-                              </li>
-                            </ul>
-                            <p>
-                              Black farmers in the US’s South—&nbsp;faced with
-                              continued failure their
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="grid-sm vink-post-list">
-                      <div
-                        class="row mb-10 post-186 post type-post status-publish format-standard has-post-thumbnail hentry category-people category-politics category-world tag-sports">
-                        <div class="col-md-4">
-                          <div class="ts-post-thumb">
-                            <a
-                              class="post-cat"
-                              href="#"
-                              style="
-                                color: #ffffff;
-                                background-color: #dd3333;
-                                border-left-color: #dd3333;
-                              ">
-                              people
-                            </a>
-                            <a href="#">
-                              <noscript> </noscript>
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-md-8">
-                          <div class="post-content">
-                            <h3 class="post-title md">
-                              <a href="#">
-                                Youth vaping an epidemic with crackdown coming
-                              </a>
-                            </h3>
-                            <ul class="post-meta-info">
-                              <li>
-                                <i class="xsicon xsicon-clock"> </i>
-                                December 7, 2018
-                              </li>
-                            </ul>
-                            <p>
-                              Black farmers in the US’s South—&nbsp;faced with
-                              continued failure their
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-5fc673b elementor-widget elementor-widget-vinazine-more-post-two"
-                data-element_type="widget"
-                data-id="5fc673b"
-                data-widget_type="vinazine-more-post-two.default">
-                <div class="elementor-widget-container"></div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-c45512c"
-            data-element_type="column"
-            data-id="c45512c">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-9b1adc9 elementor-widget elementor-widget-vinazine-post-list"
-                data-element_type="widget"
-                data-id="9b1adc9"
-                data-widget_type="vinazine-post-list.default">
-                <div class="elementor-widget-container">
-                  <div
-                    class="widgets ts-grid-box widgets-populer-post grid-no-shadow">
-                    <h2 class="ts-title block-title-style1">
-                      <span class="title-before"> </span>
-                      Exclisuve Videos
-                    </h2>
-                    <div class="item vinkgmag-grid-posts grid-md">
-                      <div
-                        class="post-3734 post type-post status-publish format-video has-post-thumbnail hentry category-video post_format-post-format-video">
-                        <div class="ts-grid-box ts-grid-content grid-no-shadow">
-                          <a
-                            class="post-cat"
-                            href="#"
-                            style="
-                              color: #ffffff;
-                              background-color: #d72924;
-                              border-left-color: #d72924;
-                            ">
-                            Video
-                          </a>
-                          <div class="ts-post-thumb">
-                            <a href="#"> </a>
-                          </div>
-                          <div class="post-content">
-                            <h3 class="post-title">
-                              <a href="#">
-                                Kindole Oreo Stuffed Chocolate Chip Cookies free
-                              </a>
-                            </h3>
-                            <ul class="post-meta-info"></ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #d72924"> Video </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#">
-                            Kindole Oreo Stuffed Chocolate Chip...
-                          </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #d72924"> Video </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> Backward leg allows young cancer... </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #d72924"> Video </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> Vontae Davis Quit on the... </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #d72924"> politics </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#">
-                            Clock is companies underage ticking...
-                          </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #dd3333"> people </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> Theye back return to you... </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #dd3333"> people </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#">
-                            Netcix integrated personal cuts out...
-                          </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#">
-                        <noscript> </noscript>
-                      </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #d72924"> sports </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> 10 critical points from epic... </a>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-0012b31 elementor-widget elementor-widget-shortcode"
-                data-element_type="widget"
-                data-id="0012b31"
-                data-widget_type="shortcode.default">
-                <div class="elementor-widget-container">
-                  <div class="elementor-shortcode">
-                    <div class="xs_social_counter_widget">
-                      <ul
-                        class="xs_counter_url wslu-style-1 wslu-counter-box-shaped wslu-counter-fill-colored wslu-counter-space wslu-none wslu-theme-font-no">
-                        <li
-                          class="xs-counter-li youtube"
-                          data-key="youtube"></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              <div class="post-title-large">
+                <h4>10 critical points from epic...</h4>
+                <p><i class="fas fa-clock"></i> December 10, 2018</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-0472831 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-element_type="section"
-        data-id="0472831">
-        <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9810851"
-            data-element_type="column"
-            data-id="9810851">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-d2ea649 elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-image"
-                data-element_type="widget"
-                data-id="d2ea649"
-                data-widget_type="image.default">
-                <div class="elementor-widget-container">
-                  <noscript> </noscript>
-                </div>
+
+        <!-- Middle Content -->
+        <div class="content-middle">
+          <div class="section-title">| Breaking News</div>
+          <div class="main-posts">
+            <div class="card card-wide">
+              <img
+                src="https://images.unsplash.com/photo-1544717305-d41c19b48c68?q=80&w=350&h=250&fit=crop"
+                alt="Man in suit" />
+              <div class="card-text">
+                <span class="category">PEOPLE</span>
+                <h5>Netcix integrated personal cuts out the chill with an</h5>
+              </div>
+            </div>
+            <div class="card card-compact">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="Abstract painting" />
+              <div class="card-text">
+                <span class="category">people</span>
+                <p>Theye back return to you...</p>
+              </div>
+            </div>
+            <div class="card card-compact">
+              <img
+                src="https://images.unsplash.com/photo-1544717305-d41c19b48c68?q=80&w=100&h=80&fit=crop"
+                alt="Man in a suit" />
+              <div class="card-text">
+                <span class="category">people</span>
+                <p>Marriott has new rewards offerings...</p>
+              </div>
+            </div>
+            <div class="card card-compact">
+              <img
+                src="https://images.unsplash.com/photo-1549488344-934d40026e63?q=80&w=100&h=80&fit=crop"
+                alt="German flag" />
+              <div class="card-text">
+                <span class="category">politics</span>
+                <p>Clock is companies underage ticking...</p>
+              </div>
+            </div>
+            <div class="card card-wide">
+              <img
+                src="https://images.unsplash.com/photo-1549488344-934d40026e63?q=80&w=350&h=250&fit=crop"
+                alt="Youth Vaping" />
+              <div class="card-text">
+                <span class="category">PEOPLE</span>
+                <h5>Youth vaping an epidemic with crackdown coming</h5>
+                <p><i class="fas fa-clock"></i> December 7, 2018</p>
+                <p>
+                  Black farmers in the US's South faced with continued failure
+                  their
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-3880a76 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-element_type="section"
-        data-id="3880a76">
-        <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-90e4eb6"
-            data-element_type="column"
-            data-id="90e4eb6">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-31f6101 elementor-widget elementor-widget-vinazine-post-list"
-                data-element_type="widget"
-                data-id="31f6101"
-                data-widget_type="vinazine-post-list.default">
-                <div class="elementor-widget-container">
-                  <div
-                    class="widgets ts-grid-box widgets-populer-post grid-no-shadow">
-                    <h2 class="ts-title block-title-style1">
-                      <span class="title-before"> </span>
-                      Latest News
-                    </h2>
-                    <div class="item vinkgmag-grid-posts grid-md">
-                      <div
-                        class="post-170 post type-post status-publish format-standard has-post-thumbnail hentry category-people category-politics category-sports category-world tag-people tag-politics tag-technology tag-travel">
-                        <div class="ts-grid-box ts-grid-content grid-no-shadow">
-                          <a
-                            class="post-cat"
-                            href="#"
-                            style="
-                              color: #ffffff;
-                              background-color: #dd3333;
-                              border-left-color: #dd3333;
-                            ">
-                            people
-                          </a>
-                          <div class="ts-post-thumb">
-                            <a href="#"> </a>
-                          </div>
-                          <div class="post-content">
-                            <h3 class="post-title">
-                              <a href="#">
-                                Netcix integrated personal cuts out the chill
-                                with an
-                              </a>
-                            </h3>
-                            <ul class="post-meta-info"></ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #dd3333"> people </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> Theye back return to you... </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #dd3333"> people </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#">
-                            Marriott has new rewards offerings...
-                          </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #d72924"> politics </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#">
-                            Clock is companies underage ticking...
-                          </a>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+        <!-- Right Sidebar -->
+        <div class="content-right">
+          <div class="section-title">| Exclusive Videos</div>
+          <div class="video-posts">
+            <div class="card card-video">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="Video Placeholder" />
+              <div class="card-text">
+                <span class="category">VIDEO</span>
+                <p>Kindole Oreo Stuffed Chocolate Chip Cookies free</p>
+              </div>
+            </div>
+            <div class="card card-video">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="Video Placeholder" />
+              <div class="card-text">
+                <span class="category">VIDEO</span>
+                <p>Kindole Oreo Stuffed Chocolate Chip...</p>
+              </div>
+            </div>
+            <div class="card card-video">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="Video Placeholder" />
+              <div class="card-text">
+                <span class="category">Video</span>
+                <p>Backward leg allows young cancer...</p>
+              </div>
+            </div>
+            <div class="card card-video">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="Video Placeholder" />
+              <div class="card-text">
+                <span class="category">Video</span>
+                <p>Vontae Davis Quit on the...</p>
+              </div>
+            </div>
+            <div class="card card-video">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="Video Placeholder" />
+              <div class="card-text">
+                <span class="category">politics</span>
+                <p>Clock is companies underage ticking...</p>
               </div>
             </div>
           </div>
-          <div
-            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-bf9a7c4"
-            data-element_type="column"
-            data-id="bf9a7c4">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-1ce9bc9 elementor-widget elementor-widget-vinazine-post-list"
-                data-element_type="widget"
-                data-id="1ce9bc9"
-                data-widget_type="vinazine-post-list.default">
-                <div class="elementor-widget-container">
-                  <div
-                    class="widgets ts-grid-box widgets-populer-post grid-no-shadow">
-                    <h2 class="ts-title block-title-style1">
-                      <span class="title-before"> </span>
-                      Random News
-                    </h2>
-                    <div class="item vinkgmag-grid-posts grid-md">
-                      <div
-                        class="post-4154 post type-post status-publish format-standard has-post-thumbnail hentry category-people tag-travel">
-                        <div class="ts-grid-box ts-grid-content grid-no-shadow">
-                          <a
-                            class="post-cat"
-                            href="#"
-                            style="
-                              color: #ffffff;
-                              background-color: #dd3333;
-                              border-left-color: #dd3333;
-                            ">
-                            people
-                          </a>
-                          <div class="ts-post-thumb">
-                            <a href="#"> </a>
-                          </div>
-                          <div class="post-content">
-                            <h3 class="post-title">
-                              <a href="#">
-                                Marriott has new rewards offerings and you don’t
-                                need
-                              </a>
-                            </h3>
-                            <ul class="post-meta-info"></ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #d72924"> politics </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#">
-                            Clock is companies underage ticking...
-                          </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #dd3333"> people </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> Theye back return to you... </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#">
-                        <noscript> </noscript>
-                      </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #dd3333"> people </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> Youth vaping an epidemic with... </a>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+          <div class="content">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              impedit cumque architecto voluptatibus. Recusandae facere non
+              quisquam itaque, quos qui inventore similique autem dignissimos
+              veritatis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ News Grid Section -->
+      <div class="news-grid">
+        <!-- Latest News -->
+        <div class="news-column">
+          <h3>| Latest News</h3>
+          <div class="news-card large">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&h=250&fit=crop"
+              alt="Person at mic" />
+            <span class="category red">PEOPLE</span>
+            <h4>Netcix integrated personal cuts out the chill with an</h4>
+          </div>
+          <div class="news-list">
+            <div class="list-item">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="" />
+              <div>
+                <span class="category red">people</span>
+                <p>Theye back return to you...</p>
               </div>
             </div>
-          </div>
-          <div
-            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-116d09c"
-            data-element_type="column"
-            data-id="116d09c">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-eadd57e elementor-widget elementor-widget-vinazine-post-list"
-                data-element_type="widget"
-                data-id="eadd57e"
-                data-widget_type="vinazine-post-list.default">
-                <div class="elementor-widget-container">
-                  <div
-                    class="widgets ts-grid-box widgets-populer-post grid-no-shadow">
-                    <h2 class="ts-title block-title-style1">
-                      <span class="title-before"> </span>
-                      Around The World
-                    </h2>
-                    <div class="item vinkgmag-grid-posts grid-md">
-                      <div
-                        class="post-180 post type-post status-publish format-standard has-post-thumbnail hentry category-sports category-world tag-fitness">
-                        <div class="ts-grid-box ts-grid-content grid-no-shadow">
-                          <a
-                            class="post-cat"
-                            href="#"
-                            style="
-                              color: #ffffff;
-                              background-color: #d72924;
-                              border-left-color: #d72924;
-                            ">
-                            sports
-                          </a>
-                          <div class="ts-post-thumb">
-                            <a href="#"> </a>
-                          </div>
-                          <div class="post-content">
-                            <h3 class="post-title">
-                              <a href="#">
-                                10 critical points from epic security manifesto
-                                inability
-                              </a>
-                            </h3>
-                            <ul class="post-meta-info"></ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#">
-                        <noscript> </noscript>
-                      </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #dd3333"> people </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> Youth vaping an epidemic with... </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #d72924"> Video </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> Vontae Davis Quit on the... </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #d72924"> politics </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#">
-                            Clock is companies underage ticking...
-                          </a>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="list-item">
+              <img
+                src="https://images.unsplash.com/photo-1544717305-d41c19b48c68?q=80&w=100&h=80&fit=crop"
+                alt="" />
+              <div>
+                <span class="category red">people</span>
+                <p>Marriott has new rewards offerings...</p>
               </div>
             </div>
-          </div>
-          <div
-            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-82fb640"
-            data-element_type="column"
-            data-id="82fb640">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-0bd0ab9 elementor-widget elementor-widget-vinazine-post-list"
-                data-element_type="widget"
-                data-id="0bd0ab9"
-                data-widget_type="vinazine-post-list.default">
-                <div class="elementor-widget-container">
-                  <div
-                    class="widgets ts-grid-box widgets-populer-post grid-no-shadow">
-                    <h2 class="ts-title block-title-style1">
-                      <span class="title-before"> </span>
-                      Editor’s Choice
-                    </h2>
-                    <div class="item vinkgmag-grid-posts grid-md">
-                      <div
-                        class="post-170 post type-post status-publish format-standard has-post-thumbnail hentry category-people category-politics category-sports category-world tag-people tag-politics tag-technology tag-travel">
-                        <div class="ts-grid-box ts-grid-content grid-no-shadow">
-                          <a
-                            class="post-cat"
-                            href="#"
-                            style="
-                              color: #ffffff;
-                              background-color: #dd3333;
-                              border-left-color: #dd3333;
-                            ">
-                            people
-                          </a>
-                          <div class="ts-post-thumb">
-                            <a href="#"> </a>
-                          </div>
-                          <div class="post-content">
-                            <h3 class="post-title">
-                              <a href="#">
-                                Netcix integrated personal cuts out the chill
-                                with an
-                              </a>
-                            </h3>
-                            <ul class="post-meta-info"></ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#">
-                        <noscript> </noscript>
-                      </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #dd3333"> people </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> Youth vaping an epidemic with... </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #dd3333"> people </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#"> Theye back return to you... </a>
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="post-content media">
-                      <a href="#"> </a>
-                      <div class="media-body">
-                        <span class="post-tag">
-                          <a href="#" style="color: #d72924"> politics </a>
-                        </span>
-                        <h4 class="post-title">
-                          <a href="#">
-                            Clock is companies underage ticking...
-                          </a>
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="list-item">
+              <img
+                src="https://images.unsplash.com/photo-1549488344-934d40026e63?q=80&w=100&h=80&fit=crop"
+                alt="" />
+              <div>
+                <span class="category blue">politics</span>
+                <p>Clock is companies underage ticking...</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-    <div
-      class="xs_social_share_widget xs_share_url after_content main_content wslu-style-1 wslu-share-box-shaped wslu-fill-colored wslu-none wslu-share-horizontal wslu-theme-font-no wslu-main_content">
-      <ul></ul>
-    </div>
+
+        <!-- Random News -->
+        <div class="news-column">
+          <h3>| Random News</h3>
+          <div class="news-card large">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&h=250&fit=crop"
+              alt="Person at mic" />
+            <span class="category red">PEOPLE</span>
+            <h4>Marriott has new rewards offerings and you don’t need</h4>
+          </div>
+          <div class="news-list">
+            <div class="list-item">
+              <img
+                src="https://images.unsplash.com/photo-1549488344-934d40026e63?q=80&w=100&h=80&fit=crop"
+                alt="" />
+              <div>
+                <span class="category blue">politics</span>
+                <p>Clock is companies underage ticking...</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="" />
+              <div>
+                <span class="category red">people</span>
+                <p>Theye back return to you...</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <img
+                src="https://images.unsplash.com/photo-1544717305-d41c19b48c68?q=80&w=100&h=80&fit=crop"
+                alt="" />
+              <div>
+                <span class="category red">people</span>
+                <p>Youth vaping an epidemic with...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Around The World -->
+        <div class="news-column">
+          <h3>| Around The World</h3>
+          <div class="news-card large">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&h=250&fit=crop"
+              alt="Protest" />
+            <span class="category orange">SPORTS</span>
+            <h4>10 critical points from epic security manifesto inability</h4>
+          </div>
+          <div class="news-list">
+            <div class="list-item">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="" />
+              <div>
+                <span class="category red">people</span>
+                <p>Youth vaping an epidemic with...</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="" />
+              <div>
+                <span class="category purple">Video</span>
+                <p>Vontae Davis Quit on the...</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <img
+                src="https://images.unsplash.com/photo-1549488344-934d40026e63?q=80&w=100&h=80&fit=crop"
+                alt="" />
+              <div>
+                <span class="category blue">politics</span>
+                <p>Clock is companies underage ticking...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editor’s Choice -->
+        <div class="news-column">
+          <h3>| Editor’s Choice</h3>
+          <div class="news-card large">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=400&h=250&fit=crop"
+              alt="Person at mic" />
+            <span class="category red">PEOPLE</span>
+            <h4>Netcix integrated personal cuts out the chill with an</h4>
+          </div>
+          <div class="news-list">
+            <div class="list-item">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="" />
+              <div>
+                <span class="category red">people</span>
+                <p>Youth vaping an epidemic with...</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <img
+                src="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/2018/10/sports4-150x150.jpg"
+                alt="" />
+              <div>
+                <span class="category red">people</span>
+                <p>Theye back return to you...</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <img
+                src="https://images.unsplash.com/photo-1549488344-934d40026e63?q=80&w=100&h=80&fit=crop"
+                alt="" />
+              <div>
+                <span class="category blue">politics</span>
+                <p>Clock is companies underage ticking...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <footer class="site-footer">
       <p>&copy; 2025 Your News Website. All rights reserved.</p>
     </footer>
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=1726124038"
-      id="font-awesome-5-all-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.24.5"
-      id="font-awesome-4-shim-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.24.5"
-      id="widget-divider-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.5"
-      id="widget-social-icons-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.24.5"
-      id="e-apple-webkit-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.24.5"
-      id="widget-text-editor-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/metform/public/assets/css/metform-ui.css?ver=1726124038"
-      id="metform-ui-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      data-minify="1"
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/cache/min/10/vinkmag/vink-news/wp-content/plugins/metform/public/assets/css/style.css?ver=1726124038"
-      id="metform-style-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <link
-      href="https://demo.xpeedstudio.com/vinkmag/vink-news/wp-content/uploads/sites/10/elementor/css/post-4635.css?ver=1726124038"
-      id="elementor-post-4635-css"
-      media="all"
-      rel="stylesheet"
-      type="text/css" />
-    <span class="elementor-screen-only" id="elementor-device-mode-wpr"> </span>
-    <span class="elementor-screen-only" id="elementor-device-mode"> </span>
   </body>
 </html>
