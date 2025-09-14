@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech News</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Fade-up animation */
+      @keyframes fadeUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-up {
+        opacity: 0;
+        animation: fadeUp 0.8s ease forwards;
+      }
+
+      /* Smooth transition for hover effects */
+      .transition-smooth {
+        transition: all 0.3s ease;
+      }
+
+      /* Mobile menu slide animation */
+      .slide-down-enter {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      .slide-down-enter-active {
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black font-sans">
+    <!-- Top Navbar -->
+    <header class="bg-emerald-400">
+      <nav
+        class="container mx-auto px-6 lg:px-12 flex items-center justify-between py-3 font-bold text-lg relative">
+        <!-- Logo -->
+        <a
+          href="#"
+          class="text-black text-xl font-bold transition-smooth hover:text-white"
+          >TechNews</a
+        >
+
+        <!-- Hamburger button (mobile) -->
+        <button
+          id="menu-btn"
+          class="block lg:hidden text-black focus:outline-none transition-smooth hover:text-white">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Menu -->
+        <ul
+          id="menu"
+          class="hidden lg:flex flex-col lg:flex-row gap-6 text-black absolute lg:static top-full left-0 w-full lg:w-auto bg-emerald-400 lg:bg-transparent px-6 py-4 lg:p-0 transition-smooth">
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-white"
+              >Demos +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Blog +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Post Demos +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Authors</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Contacts</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Smartphones</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Tablets</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Wearables</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Domotics</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Tutorials</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="container mx-auto px-6 lg:px-12 py-10 space-y-16">
+      <!-- Top Section (Sidebar + Featured) -->
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-10 fade-up">
+        <!-- Left Sidebar -->
+        <aside class="lg:col-span-1 order-2 lg:order-1 space-y-6">
+          <h2
+            class="text-2xl font-extrabold mb-4 flex items-center gap-2 transition-smooth hover:text-emerald-600">
+            HOT THIS WEEK <span class="text-emerald-400">_</span>
+          </h2>
+          <div class="space-y-6">
+            <div
+              class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://picsum.photos/seed/cyber/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                Cybersecurity in the Age of Remote Work
+              </p>
+            </div>
+            <div
+              class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://picsum.photos/seed/metaverse/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                Breaking Down the Metaverse: What It Means for You
+              </p>
+            </div>
+            <div
+              class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://picsum.photos/seed/automation/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                The Future of Work: AI, Automation, and the Human Element
+              </p>
+            </div>
+            <div
+              class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://picsum.photos/seed/ai/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                The Ethical Implications of Artificial Intelligence
+              </p>
+            </div>
+            <div
+              class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://picsum.photos/seed/automation/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                The Future of Work: AI, Automation, and the Human Element
+              </p>
+            </div>
+            <div
+              class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://picsum.photos/seed/ai/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                The Ethical Implications of Artificial Intelligence
+              </p>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="flex gap-3 mt-6">
+            <button
+              class="px-4 py-1 bg-emerald-200 text-gray-600 rounded transition-smooth hover:bg-emerald-300 hover:text-black">
+              Prev
+            </button>
+            <button
+              class="px-4 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white">
+              Next
+            </button>
+          </div>
+        </aside>
+
+        <!-- Featured Section -->
+        <section class="lg:col-span-2 order-1 lg:order-2 space-y-6 fade-up">
+          <h2
+            class="text-2xl font-extrabold mb-4 flex items-center gap-2 transition-smooth hover:text-emerald-600">
+            FEATURED <span class="text-emerald-400">_</span>
+          </h2>
+
+          <!-- Main Featured Card -->
+          <div
+            class="grid lg:grid-cols-2 gap-6 items-start transition-smooth hover:scale-105 hover:shadow-xl">
+            <img
+              src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=800"
+              alt=""
+              class="rounded shadow object-cover transition-smooth" />
+            <div>
+              <span
+                class="inline-block bg-purple-300 text-xs font-bold px-2 py-1 rounded transition-smooth hover:bg-purple-400"
+                >Blockchain</span
+              >
+              <h3
+                class="text-3xl lg:text-4xl font-extrabold mt-3 mb-4 transition-smooth hover:text-purple-700">
+                The Rise of Foldable Phones
+              </h3>
+              <p class="text-gray-700 mb-4">
+                In today's digital age, smart home security has become a
+                necessity. Advanced surveillance systems, smart door and window
+                sensors, and intelligent locks offer unparalleled protection...
+              </p>
+              <div
+                class="flex flex-wrap gap-4 text-sm text-gray-500 transition-smooth">
+                <span>👤 Aurora Ashwood</span>
+                <span>📅 May 10, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article Grid -->
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=600"
+                class="rounded mb-3 transition-smooth hover:opacity-80" />
+              <span
+                class="bg-purple-300 text-xs px-2 py-1 rounded transition-smooth hover:bg-purple-400"
+                >Smartphones</span
+              >
+              <h4
+                class="font-bold mt-2 transition-smooth hover:text-purple-700">
+                Cybersecurity in the Age of Remote Work
+              </h4>
+            </div>
+            <div class="transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600"
+                class="rounded mb-3 transition-smooth hover:opacity-80" />
+              <span
+                class="bg-purple-300 text-xs px-2 py-1 rounded transition-smooth hover:bg-purple-400"
+                >Tutorials</span
+              >
+              <h4
+                class="font-bold mt-2 transition-smooth hover:text-purple-700">
+                Breaking Down the Metaverse: What It Means for You
+              </h4>
+            </div>
+            <div class="space-y-4">
+              <div
+                class="flex items-center gap-3 h-20 transition-smooth hover:scale-105 hover:shadow-lg">
+                <img
+                  src="https://picsum.photos/seed/iot/100/100"
+                  class="w-20 h-20 object-cover rounded" />
+                <p class="font-bold text-sm leading-snug">
+                  Navigating the Internet of Things (IoT)
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-3 h-20 transition-smooth hover:scale-105 hover:shadow-lg">
+                <img
+                  src="https://picsum.photos/seed/fitness/100/100"
+                  class="w-20 h-20 object-cover rounded" />
+                <p class="font-bold text-sm leading-snug">
+                  The Best Fitness Trackers for Every Need
+                </p>
+              </div>
+              <div
+                class="flex items-center gap-3 h-20 transition-smooth hover:scale-105 hover:shadow-lg">
+                <img
+                  src="https://picsum.photos/seed/pc/100/100"
+                  class="w-20 h-20 object-cover rounded" />
+                <p class="font-bold text-sm leading-snug">
+                  How to Build Your Own PC
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Tags Section -->
+      <section class="py-10 fade-up">
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >Reviews</span
+          >
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >Smartphones</span
+          >
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >Tablets</span
+          >
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >Wearables</span
+          >
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >Gaming</span
+          >
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >PC</span
+          >
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >Audio</span
+          >
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >Video</span
+          >
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >Photo</span
+          >
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >AI</span
+          >
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >Cybersecurity</span
+          >
+          <span
+            class="px-3 py-1 bg-emerald-400 text-black rounded transition-smooth hover:bg-emerald-500 hover:text-white"
+            >Blockchain</span
+          >
+        </div>
+      </section>
+
+      <!-- 3x3 Article Grid -->
+      <section class="py-10 fade-up">
+        <h2
+          class="text-2xl font-extrabold mb-6 transition-smooth hover:text-emerald-600">
+          More Articles
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+            <img
+              src="https://picsum.photos/seed/cyber/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">Cybersecurity in the Age of Remote Work</p>
+          </div>
+          <div
+            class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+            <img
+              src="https://picsum.photos/seed/metaverse/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              Breaking Down the Metaverse: What It Means for You
+            </p>
+          </div>
+          <div
+            class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+            <img
+              src="https://picsum.photos/seed/automation/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              The Future of Work: AI, Automation, and the Human Element
+            </p>
+          </div>
+          <div
+            class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+            <img
+              src="https://picsum.photos/seed/cyber/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">Cybersecurity in the Age of Remote Work</p>
+          </div>
+          <div
+            class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+            <img
+              src="https://picsum.photos/seed/metaverse/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              Breaking Down the Metaverse: What It Means for You
+            </p>
+          </div>
+          <div
+            class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+            <img
+              src="https://picsum.photos/seed/automation/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              The Future of Work: AI, Automation, and the Human Element
+            </p>
+          </div>
+          <div
+            class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+            <img
+              src="https://picsum.photos/seed/cyber/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">Cybersecurity in the Age of Remote Work</p>
+          </div>
+          <div
+            class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+            <img
+              src="https://picsum.photos/seed/metaverse/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              Breaking Down the Metaverse: What It Means for You
+            </p>
+          </div>
+          <div
+            class="flex gap-4 transition-smooth hover:scale-105 hover:shadow-lg">
+            <img
+              src="https://picsum.photos/seed/automation/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              The Future of Work: AI, Automation, and the Human Element
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Innovation Section -->
+      <section class="py-10 fade-up">
+        <h2
+          class="text-2xl font-extrabold mb-6 flex items-center gap-2 transition-smooth hover:text-emerald-600">
+          INNOVATION <span class="text-emerald-400">_</span>
+        </h2>
+        <div class="grid lg:grid-cols-3 gap-10">
+          <!-- Left Column -->
+          <div class="lg:col-span-2 space-y-10">
+            <div
+              class="grid md:grid-cols-2 gap-6 items-start transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://typify.qantumthemes.xyz/demo08/wp-content/uploads/2024/08/typify-demo08-blog-60-1240x827.jpg"
+                class="rounded shadow w-full h-56 object-cover" />
+              <div>
+                <span
+                  class="inline-block bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded transition-smooth hover:bg-purple-600"
+                  >AI</span
+                >
+                <h3
+                  class="text-xl font-extrabold mt-3 mb-2 transition-smooth hover:text-purple-700">
+                  The Future of Work: AI, Automation, and the Human Element
+                </h3>
+                <p class="text-gray-700 text-sm mb-3">
+                  In today's digital age, smart home security has become a
+                  necessity...
+                </p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-500">
+                  <span>👤 Aurora Ashwood</span>
+                  <span>📅 May 14, 2024</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="grid md:grid-cols-2 gap-6 items-start transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://typify.qantumthemes.xyz/demo08/wp-content/uploads/2024/08/typify-demo08-blog-59-768x1151.jpg"
+                class="rounded shadow w-full h-56 object-cover" />
+              <div>
+                <span
+                  class="inline-block bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded transition-smooth hover:bg-purple-600"
+                  >Emerging</span
+                >
+                <h3
+                  class="text-xl font-extrabold mt-3 mb-2 transition-smooth hover:text-purple-700">
+                  How Blockchain is Revolutionizing Industries
+                </h3>
+                <p class="text-gray-700 text-sm mb-3">
+                  In today's digital age, smart home security has become a
+                  necessity...
+                </p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-500">
+                  <span>👤 Aurora Ashwood</span>
+                  <span>📅 May 14, 2024</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="grid md:grid-cols-2 gap-6 items-start transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://typify.qantumthemes.xyz/demo08/wp-content/uploads/2024/08/typify-demo08-blog-60-1240x827.jpg"
+                class="rounded shadow w-full h-56 object-cover" />
+              <div>
+                <span
+                  class="inline-block bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded transition-smooth hover:bg-purple-600"
+                  >AI</span
+                >
+                <h3
+                  class="text-xl font-extrabold mt-3 mb-2 transition-smooth hover:text-purple-700">
+                  The Future of Work: AI, Automation, and the Human Element
+                </h3>
+                <p class="text-gray-700 text-sm mb-3">
+                  In today's digital age, smart home security has become a
+                  necessity...
+                </p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-500">
+                  <span>👤 Aurora Ashwood</span>
+                  <span>📅 May 14, 2024</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="grid md:grid-cols-2 gap-6 items-start transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://typify.qantumthemes.xyz/demo08/wp-content/uploads/2024/08/typify-demo08-blog-59-768x1151.jpg"
+                class="rounded shadow w-full h-56 object-cover" />
+              <div>
+                <span
+                  class="inline-block bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded transition-smooth hover:bg-purple-600"
+                  >Emerging</span
+                >
+                <h3
+                  class="text-xl font-extrabold mt-3 mb-2 transition-smooth hover:text-purple-700">
+                  How Blockchain is Revolutionizing Industries
+                </h3>
+                <p class="text-gray-700 text-sm mb-3">
+                  In today's digital age, smart home security has become a
+                  necessity...
+                </p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-500">
+                  <span>👤 Aurora Ashwood</span>
+                  <span>📅 May 14, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (small vertical cards) -->
+          <div class="space-y-8">
+            <div
+              class="flex gap-4 items-start transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200"
+                class="w-24 h-24 rounded object-cover" />
+              <div>
+                <h4
+                  class="font-bold text-base leading-snug transition-smooth hover:text-purple-700">
+                  Smartphones: The Ultimate Personal Assistant?
+                </h4>
+                <span
+                  class="mt-2 inline-block bg-purple-500 text-white text-xs px-2 py-1 rounded transition-smooth hover:bg-purple-600"
+                  >Emerging</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex gap-4 items-start transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200"
+                class="w-24 h-24 rounded object-cover" />
+              <div>
+                <h4
+                  class="font-bold text-base leading-snug transition-smooth hover:text-purple-700">
+                  The Metaverse: Opportunities and Risks
+                </h4>
+                <span
+                  class="mt-2 inline-block bg-purple-500 text-white text-xs px-2 py-1 rounded transition-smooth hover:bg-purple-600"
+                  >AI</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex gap-4 items-start transition-smooth hover:scale-105 hover:shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200"
+                class="w-24 h-24 rounded object-cover" />
+              <div>
+                <h4
+                  class="font-bold text-base leading-snug transition-smooth hover:text-purple-700">
+                  The Metaverse: Opportunities and Risks
+                </h4>
+                <span
+                  class="mt-2 inline-block bg-purple-500 text-white text-xs px-2 py-1 rounded transition-smooth hover:bg-purple-600"
+                  >AI</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gray-900 text-gray-400 text-sm text-center py-6 mt-16 transition-smooth hover:text-white">
+      © 2025 TechNews. All rights reserved.
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("slide-down-enter-active");
+      });
+
+      // Fade-up animation on scroll
+      const fadeEls = document.querySelectorAll(".fade-up");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      fadeEls.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
