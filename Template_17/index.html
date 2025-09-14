@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech News</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-black font-sans">
+    <!-- Top Navbar -->
+    <header class="bg-emerald-400">
+      <nav
+        class="container mx-auto px-6 lg:px-12 flex items-center justify-between py-3 font-bold text-lg relative">
+        <!-- Logo / Title -->
+        <a href="#" class="text-black text-xl font-bold">TechNews</a>
+
+        <!-- Hamburger button (visible on small screens) -->
+        <button
+          id="menu-btn"
+          class="block lg:hidden text-black focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Menu -->
+        <ul
+          id="menu"
+          class="hidden lg:flex flex-col lg:flex-row gap-6 text-black absolute lg:static top-full left-0 w-full lg:w-auto bg-emerald-400 lg:bg-transparent px-6 py-4 lg:p-0">
+          <li>
+            <a href="#" class="hover:underline block lg:inline-block"
+              >Demos +</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:underline block lg:inline-block">Blog +</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline block lg:inline-block"
+              >Post Demos +</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:underline block lg:inline-block"
+              >Authors</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:underline block lg:inline-block"
+              >Contacts</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:underline block lg:inline-block"
+              >Smartphones</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:underline block lg:inline-block"
+              >Tablets</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:underline block lg:inline-block"
+              >Wearables</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:underline block lg:inline-block"
+              >Domotics</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:underline block lg:inline-block"
+              >Tutorials</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="container mx-auto px-6 lg:px-12 py-10 space-y-16">
+      <!-- Top Section (Sidebar + Featured) -->
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+        <!-- Left Sidebar (Hot This Week) -->
+        <aside class="lg:col-span-1 order-2 lg:order-1">
+          <h2 class="text-2xl font-extrabold mb-4 flex items-center gap-2">
+            HOT THIS WEEK <span class="text-emerald-400">_</span>
+          </h2>
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <img
+                src="https://picsum.photos/seed/cyber/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                Cybersecurity in the Age of Remote Work
+              </p>
+            </div>
+            <div class="flex gap-4">
+              <img
+                src="https://picsum.photos/seed/metaverse/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                Breaking Down the Metaverse: What It Means for You
+              </p>
+            </div>
+            <div class="flex gap-4">
+              <img
+                src="https://picsum.photos/seed/automation/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                The Future of Work: AI, Automation, and the Human Element
+              </p>
+            </div>
+            <div class="flex gap-4">
+              <img
+                src="https://picsum.photos/seed/ai/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                The Ethical Implications of Artificial Intelligence
+              </p>
+            </div>
+            <div class="flex gap-4">
+              <img
+                src="https://picsum.photos/seed/blockchain/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                How Blockchain is Revolutionizing Industries
+              </p>
+            </div>
+            <div class="flex gap-4">
+              <img
+                src="https://picsum.photos/seed/data/120/120"
+                alt=""
+                class="w-20 h-20 object-cover rounded" />
+              <p class="font-semibold">
+                The Impact of Big Data on Our Daily Lives
+              </p>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="flex gap-3 mt-6">
+            <button class="px-4 py-1 bg-emerald-200 text-gray-600 rounded">
+              Prev
+            </button>
+            <button class="px-4 py-1 bg-emerald-400 text-black rounded">
+              Next
+            </button>
+          </div>
+        </aside>
+
+        <!-- Featured Section -->
+        <section class="lg:col-span-2 order-1 lg:order-2">
+          <h2 class="text-2xl font-extrabold mb-4 flex items-center gap-2">
+            FEATURED <span class="text-emerald-400">_</span>
+          </h2>
+
+          <!-- Main Featured Card -->
+          <div class="grid lg:grid-cols-2 gap-6 items-start mb-10">
+            <img
+              src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=800"
+              alt=""
+              class="rounded shadow" />
+            <div>
+              <span
+                class="inline-block bg-purple-300 text-xs font-bold px-2 py-1 rounded"
+                >Blockchain</span
+              >
+              <h3 class="text-3xl lg:text-4xl font-extrabold mt-3 mb-4">
+                The Rise of Foldable Phones
+              </h3>
+              <p class="text-gray-700 mb-4">
+                In today's digital age, smart home security has become a
+                necessity. Advanced surveillance systems, smart door and window
+                sensors, and intelligent loc Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Praesentium mollitia enim eligendi
+                ullam molestiae iusto!...
+              </p>
+              <div class="flex flex-wrap gap-4 text-sm text-gray-500">
+                <span>👤 Aurora Ashwood</span>
+                <span>📅 May 10, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article Grid -->
+          <div class="grid md:grid-cols-3 gap-6">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=600"
+                class="rounded mb-3" />
+              <span class="bg-purple-300 text-xs px-2 py-1 rounded"
+                >Smartphones</span
+              >
+              <h4 class="font-bold mt-2">
+                Cybersecurity in the Age of Remote Work
+              </h4>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600 "
+                class="rounded mb-3" />
+              <span class="bg-purple-300 text-xs px-2 py-1 rounded"
+                >Tutorials</span
+              >
+              <h4 class="font-bold mt-2">
+                Breaking Down the Metaverse: What It Means for You
+              </h4>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3 h-20">
+                <img
+                  src="https://picsum.photos/seed/iot/100/100"
+                  class="w-20 h-20 object-cover rounded" />
+                <p class="font-bold text-sm leading-snug">
+                  Navigating the Internet of Things (IoT)
+                </p>
+              </div>
+              <div class="flex items-center gap-3 h-20">
+                <img
+                  src="https://picsum.photos/seed/fitness/100/100"
+                  class="w-20 h-20 object-cover rounded" />
+                <p class="font-bold text-sm leading-snug">
+                  The Best Fitness Trackers for Every Need
+                </p>
+              </div>
+              <div class="flex items-center gap-3 h-20">
+                <img
+                  src="https://picsum.photos/seed/pc/100/100"
+                  class="w-20 h-20 object-cover rounded" />
+                <p class="font-bold text-sm leading-snug">
+                  How to Build Your Own PC
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Tags Section -->
+      <section class="py-10">
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded"
+            >Reviews</span
+          >
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded"
+            >Smartphones</span
+          >
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded"
+            >Tablets</span
+          >
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded"
+            >Wearables</span
+          >
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded"
+            >Gaming</span
+          >
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded">PC</span>
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded">Audio</span>
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded">Video</span>
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded">Photo</span>
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded">AI</span>
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded"
+            >Cybersecurity</span
+          >
+          <span class="px-3 py-1 bg-emerald-400 text-black rounded"
+            >Blockchain</span
+          >
+        </div>
+
+        <!-- Bottom Cards -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1607706189992-eae578626c86?w=600"
+              class="rounded mb-3" />
+            <span class="bg-purple-300 text-xs px-2 py-1 rounded">Health</span>
+            <h4 class="font-bold mt-2">
+              Navigating the Internet of Things (IoT)
+            </h4>
+            <p class="text-gray-500 text-sm">
+              👤 Luna Lightfoot &nbsp; 📅 May 12, 2024
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600"
+              class="rounded mb-3" />
+            <span class="bg-purple-300 text-xs px-2 py-1 rounded">Gaming</span>
+            <h4 class="font-bold mt-2">How to Build Your Own PC</h4>
+            <p class="text-gray-500 text-sm">
+              👤 Jasper Jovial &nbsp; 📅 May 10, 2024
+            </p>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1607706189992-eae578626c86?w=600"
+              class="rounded mb-3" />
+            <span class="bg-purple-300 text-xs px-2 py-1 rounded">Health</span>
+            <h4 class="font-bold mt-2">
+              Virtual Reality Headset Showdown: Oculus vs. HTC Vive vs.
+              PlayStation...
+            </h4>
+            <p class="text-gray-500 text-sm">
+              👤 Nova Nightingale &nbsp; 📅 May 10, 2024
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 by 3 grid  -->
+      <section class="py-10">
+        <h2 class="text-2xl font-extrabold mb-6">More Articles</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="flex gap-4">
+            <img
+              src="https://picsum.photos/seed/cyber/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">Cybersecurity in the Age of Remote Work</p>
+          </div>
+
+          <div class="flex gap-4">
+            <img
+              src="https://picsum.photos/seed/metaverse/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              Breaking Down the Metaverse: What It Means for You
+            </p>
+          </div>
+
+          <div class="flex gap-4">
+            <img
+              src="https://picsum.photos/seed/automation/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              The Future of Work: AI, Automation, and the Human Element
+            </p>
+          </div>
+
+          <div class="flex gap-4">
+            <img
+              src="https://picsum.photos/seed/ai/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              The Ethical Implications of Artificial Intelligence
+            </p>
+          </div>
+
+          <div class="flex gap-4">
+            <img
+              src="https://picsum.photos/seed/blockchain/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              How Blockchain is Revolutionizing Industries
+            </p>
+          </div>
+
+          <div class="flex gap-4">
+            <img
+              src="https://picsum.photos/seed/data/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              The Impact of Big Data on Our Daily Lives
+            </p>
+          </div>
+
+          <!-- Repeat first three again to make 3 rows -->
+          <div class="flex gap-4">
+            <img
+              src="https://picsum.photos/seed/cyber/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">Cybersecurity in the Age of Remote Work</p>
+          </div>
+
+          <div class="flex gap-4">
+            <img
+              src="https://picsum.photos/seed/metaverse/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              Breaking Down the Metaverse: What It Means for You
+            </p>
+          </div>
+
+          <div class="flex gap-4">
+            <img
+              src="https://picsum.photos/seed/automation/120/120"
+              alt=""
+              class="w-20 h-20 object-cover rounded" />
+            <p class="font-semibold">
+              The Future of Work: AI, Automation, and the Human Element
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Innovation Section -->
+      <section class="py-10">
+        <h2 class="text-2xl font-extrabold mb-6 flex items-center gap-2">
+          INNOVATION <span class="text-emerald-400">_</span>
+        </h2>
+
+        <div class="grid lg:grid-cols-3 gap-10">
+          <!-- Left Column (2 big articles stacked) -->
+          <div class="lg:col-span-2 space-y-10">
+            <!-- Article 1 -->
+            <div class="grid md:grid-cols-2 gap-6 items-start">
+              <img
+                src="https://typify.qantumthemes.xyz/demo08/wp-content/uploads/2024/08/typify-demo08-blog-60-1240x827.jpg"
+                class="rounded shadow w-full h-56 object-cover" />
+              <div>
+                <span
+                  class="inline-block bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded"
+                  >AI</span
+                >
+                <h3 class="text-xl font-extrabold mt-3 mb-2">
+                  The Future of Work: AI, Automation, and the Human Element
+                </h3>
+                <p class="text-gray-700 text-sm mb-3">
+                  In today's digital age, smart home security has become a
+                  necessity. Advanced surveillance systems, smart door and
+                  window sensors, and intelligent locks offer unparalleled
+                  protection...
+                </p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-500">
+                  <span>👤 Aurora Ashwood</span>
+                  <span>📅 May 14, 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="grid md:grid-cols-2 gap-6 items-start">
+              <img
+                src="https://typify.qantumthemes.xyz/demo08/wp-content/uploads/2024/08/typify-demo08-blog-59-768x1151.jpg"
+                class="rounded shadow w-full h-56 object-cover" />
+              <div>
+                <span
+                  class="inline-block bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded"
+                  >Emerging</span
+                >
+                <h3 class="text-xl font-extrabold mt-3 mb-2">
+                  How Blockchain is Revolutionizing Industries
+                </h3>
+                <p class="text-gray-700 text-sm mb-3">
+                  In today's digital age, smart home security has become a
+                  necessity. Advanced surveillance systems, smart door and
+                  window sensors, and intelligent locks offer unparalleled
+                  protection...
+                </p>
+                <div class="flex flex-wrap gap-4 text-xs text-gray-500">
+                  <span>👤 Aurora Ashwood</span>
+                  <span>📅 May 14, 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column (small vertical list) -->
+          <div class="space-y-8">
+            <!-- Small card -->
+            <div class="flex gap-4 items-start">
+              <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200"
+                class="w-24 h-24 rounded object-cover" />
+              <div>
+                <h4 class="font-bold text-base leading-snug">
+                  Smartphones: The Ultimate Personal Assistant?
+                </h4>
+                <span
+                  class="mt-2 inline-block bg-purple-500 text-white text-xs px-2 py-1 rounded"
+                  >Emerging</span
+                >
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=200"
+                class="w-24 h-24 rounded object-cover" />
+              <div>
+                <h4 class="font-bold text-base leading-snug">
+                  Smartphones: The Ultimate Personal Assistant?
+                </h4>
+                <span
+                  class="mt-2 inline-block bg-purple-500 text-white text-xs px-2 py-1 rounded"
+                  >Emerging</span
+                >
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <img
+                src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=200"
+                class="w-24 h-24 rounded object-cover" />
+              <div>
+                <h4 class="font-bold text-base leading-snug">
+                  Best Tech Gifts for Every Budget
+                </h4>
+                <span
+                  class="mt-2 inline-block bg-purple-500 text-white text-xs px-2 py-1 rounded"
+                  >Cybersecurity</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="bg-gray-900 text-gray-400 text-sm text-center py-6 mt-16">
+      © 2025 TechNews. All rights reserved.
+    </footer>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
