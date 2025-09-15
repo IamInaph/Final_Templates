@@ -340,3 +340,79 @@ body {
 .site-footer p {
   margin: 0;
 }
+/* Header */
+.header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Header left (menu + logo) */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+.logo img {
+  height: 48px;
+  display: block;
+}
+
+/* Nav */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+/* Header right */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.search-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.login-btn {
+  border: 1px solid #ddd;
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+.site-footer {
+  background: #111; /* dark background */
+  color: #ccc; /* light gray text */
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.site-footer p {
+  margin: 0;
+}
