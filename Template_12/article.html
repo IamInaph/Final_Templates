@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUSINESSINSIDER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              oswald: ["Oswald", "sans-serif"],
+              serif: ["Merriweather", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white-100 text-gray-900 font-oswald">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center py-4">
+          <!-- Logo  -->
+          <div class="flex items-center space-x-2">
+            <img
+              src="https://soledaddemo.pencidesign.net/soledad-business-news-2/wp-content/uploads/sites/81/2025/01/BusinessInsider.png"
+              alt="BusinessInsider Logo"
+              width="150"
+              height="40" />
+          </div>
+
+          <!-- Nav + Hamburger -->
+          <div class="flex items-center ml-auto space-x-6">
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 font-medium">
+              <a href="#" class="hover:text-blue-600">BUSINESS</a>
+              <a href="#" class="hover:text-blue-600">ADVERTISING</a>
+              <a href="#" class="hover:text-blue-600">FINANCE</a>
+              <a href="#" class="hover:text-blue-600">CAREERS</a>
+              <a href="#" class="hover:text-blue-600">ECONOMY</a>
+              <a href="#" class="hover:text-blue-600">STRATEGY</a>
+              <a href="#" class="hover:text-blue-600">REAL ESTATE</a>
+              <a href="#" class="hover:text-blue-600">MEDIA</a>
+            </nav>
+
+            <!-- Hamburger -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="menu" class="hidden md:hidden bg-white">
+        <nav class="flex flex-col space-y-4 px-6 py-4">
+          <a href="#" class="hover:text-blue-600">BUSINESS</a>
+          <a href="#" class="hover:text-blue-600">ADVERTISING</a>
+          <a href="#" class="hover:text-blue-600">FINANCE</a>
+          <a href="#" class="hover:text-blue-600">CAREERS</a>
+          <a href="#" class="hover:text-blue-600">ECONOMY</a>
+          <a href="#" class="hover:text-blue-600">STRATEGY</a>
+          <a href="#" class="hover:text-blue-600">REAL ESTATE</a>
+          <a href="#" class="hover:text-blue-600">MEDIA</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto p-6 space-y-6">
+      <!-- First Grid (Main + Aside) -->
+      <div class="grid grid-cols-3 gap-6">
+        <!-- Left container (2x bigger) -->
+        <div class="col-span-2 bg-white p-6">
+          <section
+            class="max-w-3xl mx-auto bg-white p-6 border-b border-gray-300">
+            <!-- Featured Image -->
+            <div class="w-full mb-6">
+              <img
+                src="https://soledaddemo.pencidesign.net/soledad-daily-news/wp-content/uploads/sites/17/2021/12/p2-585x390.jpg"
+                alt="Football match"
+                class="w-full h-auto object-cover" />
+            </div>
+            <!-- Title -->
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              Arsenal complete first January transfer deal as Mikel Arteta plans
+              come together
+            </h1>
+
+            <!-- Meta info -->
+            <div class="flex flex-wrap items-center text-sm text-gray-500 mb-4">
+              <span
+                >written by <span class="font-medium">Penci Design</span></span
+              >
+              <span class="mx-2">|</span>
+              <span>December 21, 2021</span>
+              <span class="mx-2">|</span>
+              <span>0 comments</span>
+            </div>
+
+            <!-- Article Content -->
+            <article class="text-gray-700 leading-relaxed text-sm md:text-base">
+              <p>
+                A wonderful world with my whole heart. I am alone, and feel the
+                charm of existence in this spot, which was created for the bliss
+                of souls like mine. I am so happy, my dear friend, so absorbed
+                in the exquisite sense of mere
+                <span class="italic text-red-500">tranquil existence</span>,
+                that I neglect my talents. I should be incapable of drawing a
+                single stroke at the present moment; and yet I feel that I never
+                was a greater artist than now.
+              </p>
+              <!-- Top Paragraph -->
+              <p class="text-gray-700 leading-relaxed mb-6">
+                A wonderful world with my whole heart. I am alone, and feel the
+                charm of existence in this spot, which was created for the bliss
+                of souls like mine. I am so happy, my dear friend, so absorbed
+                in the exquisite sense of mere
+                <span class="italic text-red-600">tranquil existence</span>,
+                that I neglect my talents. I should be incapable of drawing a
+                single stroke at the present moment; and yet I feel that I never
+                was a greater artist than now.
+              </p>
+              <!-- Suggested Section -->
+              <section class="border border-gray-200 bg-gray-50 p-4 mb-6">
+                <h2 class="font-semibold text-gray-800 mb-3">
+                  You Might Be Interested In
+                </h2>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">▸</span>
+                    <a href="#" class="text-gray-800 hover:text-red-600">
+                      Novak Djokovic in Australian Open draw but Aussies still
+                      to decide
+                    </a>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">▸</span>
+                    <a href="#" class="text-gray-800 hover:text-red-600">
+                      F1: Mercedes push for Michael Masi sack amid Lewis
+                      Hamilton retirement hint
+                    </a>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">▸</span>
+                    <a href="#" class="text-gray-800 hover:text-red-600">
+                      Jake Paul and Dana White embroiled in another row after
+                      UFC chief’s video
+                    </a>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">▸</span>
+                    <a href="#" class="text-gray-800 hover:text-red-600">
+                      Bryson DeChambeau fired big-hitting jibe by two-time major
+                      champion
+                    </a>
+                  </li>
+                </ul>
+              </section>
+
+              <!-- Featured Image -->
+              <img
+                src="https://soledaddemo.pencidesign.net/soledad-daily-news/wp-content/uploads/sites/17/2021/12/p2-585x390.jpg"
+                alt="World Politics"
+                class="w-full mb-6 object-cover" />
+
+              <p class="text-gray-700 leading-relaxed">
+                When, while the lovely valley teems with vapour around me, and
+                the meridian sun strikes the upper surface of the impenetrable
+                foliage of my trees, and but a few stray gleams steal into the
+                inner sanctuary, I throw myself down among the tall grass by the
+                trickling stream; and, as I lie close to the earth,
+                <span class="italic text-red-600"
+                  >a thousand unknown plants are noticed by me</span
+                >.
+              </p>
+
+              <h2 class="text-2xl font-bold mt-2 mb-2">DEVELOP THE ECONOMY</h2>
+
+              <!-- Subtitle -->
+              <p class="text-gray-600 mb-6">
+                When I hear the buzz of the little world among the stalks, and
+                grow familiar with the countless indescribable forms of the
+                insects and flies, then I feel.
+              </p>
+
+              <!-- Image -->
+              <img
+                src="https://byteflows.net/wp/forcast-main/wp/helth/wp-content/uploads/sites/3/2024/03/main.webp"
+                alt="Develop Economy"
+                class="w-full mb-6 object-cover" />
+
+              <!-- Quote + Paragraph side by side -->
+              <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <!-- Quote -->
+                <blockquote
+                  class="border-l-4 border-red-500 pl-4 italic text-gray-600 text-sm">
+                  To take a trivial example, which of us ever undertakes
+                  laborious physical exercise, except to obtain some advantage
+                  from it?
+                  <span
+                    class="block mt-2 font-semibold text-red-600 uppercase text-xs"
+                    >Penci Design</span
+                  >
+                </blockquote>
+
+                <!-- Side paragraph -->
+                <p class="text-gray-700">
+                  When I hear the buzz of the little world among the stalks, and
+                  grow familiar with the countless indescribable forms of the
+                  insects and flies, then I feel.
+                </p>
+              </div>
+
+              <!-- Bottom paragraph -->
+              <p class="text-gray-700">
+                Everyone realizes why a new common language would be desirable:
+                one could refuse to pay expensive translators. To achieve this,
+                it would be necessary to have
+                <span class="underline">uniform grammar</span>, pronunciation
+                and more common words. If several languages coalesce, the
+                grammar of the resulting language is more simple and regular
+                than that of the individual languages. The new common language
+                will be more simple and regular than the existing European
+                languages. It will be as simple as Occidental; in fact, it will
+                be Occidental.
+              </p>
+            </article>
+            <!-- Bottom Section -->
+            <section class="py-12 bg-white">
+              <!-- Grid Layout -->
+              <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Item 1 -->
+                <div>
+                  <img
+                    src="https://soledaddemo.pencidesign.net/soledad-daily-news/wp-content/uploads/sites/17/2021/12/p29-585x390.jpg"
+                    alt="News 1"
+                    class="w-full h-48 object-cover mb-4" />
+                  <h3 class="font-semibold text-gray-800 mb-2">
+                    Novak Djokovic in Australian Open draw but Aussies still to
+                    decide
+                  </h3>
+                  <p class="text-gray-500 text-sm">December 21, 2021</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div>
+                  <img
+                    src="https://soledaddemo.pencidesign.net/soledad-daily-news/wp-content/uploads/sites/17/2021/12/p29-585x390.jpg"
+                    alt="News 2"
+                    class="w-full h-48 object-cover mb-4" />
+                  <h3 class="font-semibold text-gray-800 mb-2">
+                    F1: Mercedes push for Michael Masi sack amid Lewis Hamilton
+                    retirement hint
+                  </h3>
+                  <p class="text-gray-500 text-sm">December 21, 2021</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div>
+                  <img
+                    src="https://soledaddemo.pencidesign.net/soledad-daily-news/wp-content/uploads/sites/17/2021/12/p29-585x390.jpg"
+                    alt="News 3"
+                    class="w-full h-48 object-cover mb-4" />
+                  <h3 class="font-semibold text-gray-800 mb-2">
+                    Jake Paul and Dana White embroiled in another row after UFC
+                    chief’s video
+                  </h3>
+                  <p class="text-gray-500 text-sm">December 21, 2021</p>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+
+        <!-- Right container (aside) -->
+        <aside
+          class="sticky top-6 self-start col-span-1 bg-white p-6 border border-gray-200">
+          <!-- Top Image -->
+          <a href="#">
+            <img
+              src="https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg"
+              alt="Blog"
+              class="w-full h-48 object-cover" />
+          </a>
+
+          <!-- Blog List -->
+          <div class="mt-6 space-y-6">
+            <!-- Item 1 -->
+            <div class="flex gap-4 items-start border-b pb-4">
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full border flex items-center justify-center text-gray-700 font-bold">
+                1
+              </div>
+              <div>
+                <h3
+                  class="font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
+                  The Digital Shift: How E-commerce is Reshaping Traditional
+                  Businesses
+                </h3>
+                <p class="text-sm text-gray-500 mt-1">December 22, 2024</p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="flex gap-4 items-start border-b pb-4">
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full border flex items-center justify-center text-gray-700 font-bold">
+                2
+              </div>
+              <div>
+                <h3
+                  class="font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
+                  The Future of Finance: How Blockchain is Revolutionizing the
+                  Industry
+                </h3>
+                <p class="text-sm text-gray-500 mt-1">December 22, 2024</p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="flex gap-4 items-start border-b pb-4">
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full border flex items-center justify-center text-gray-700 font-bold">
+                3
+              </div>
+              <div>
+                <h3
+                  class="font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
+                  Global Economic Outlook: What to Expect in 2025 and Beyond
+                </h3>
+                <p class="text-sm text-gray-500 mt-1">December 22, 2024</p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="flex gap-4 items-start border-b pb-4">
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full border flex items-center justify-center text-gray-700 font-bold">
+                4
+              </div>
+              <div>
+                <h3
+                  class="font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
+                  Real Estate Trends to Watch in 2025: What’s Shaping the
+                  Market?
+                </h3>
+                <p class="text-sm text-gray-500 mt-1">December 22, 2024</p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="flex gap-4 items-start">
+              <div
+                class="flex-shrink-0 w-10 h-10 rounded-full border flex items-center justify-center text-gray-700 font-bold">
+                5
+              </div>
+              <div>
+                <h3
+                  class="font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
+                  The Art of Business Strategy: How to Build a Roadmap for
+                  Success
+                </h3>
+                <p class="text-sm text-gray-500 mt-1">December 22, 2024</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 mt-10">
+      <div class="max-w-7xl mx-auto text-center">
+        <p>&copy; 2025 BUSINESSINSIDE All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JS for Hamburger -->
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
