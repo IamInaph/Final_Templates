@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="article.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Top Navbar -->
+    <header class="bg-emerald-400">
+      <nav
+        class="container mx-auto px-6 lg:px-12 flex items-center justify-between py-3 font-bold text-lg relative">
+        <!-- Logo -->
+        <a
+          href="#"
+          class="text-black text-xl font-bold transition-smooth hover:text-white"
+          >TechNews</a
+        >
+
+        <!-- Hamburger button (mobile) -->
+        <button
+          id="menu-btn"
+          class="block lg:hidden text-black focus:outline-none transition-smooth hover:text-white">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Menu -->
+        <ul
+          id="menu"
+          class="hidden lg:flex flex-col lg:flex-row gap-6 text-black absolute lg:static top-full left-0 w-full lg:w-auto bg-emerald-400 lg:bg-transparent px-6 py-4 lg:p-0 transition-smooth">
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-white"
+              >Demos +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Blog +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Post Demos +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Authors</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Contacts</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Smartphones</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Tablets</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Wearables</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Domotics</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:underline block lg:inline-block transition-smooth hover:text-white"
+              >Tutorials</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="max-w-5xl mx-auto p-6 space-y-12">
+      <!-- HERO SECTION -->
+      <section class="relative rounded-lg overflow-hidden shadow-lg">
+        <img
+          src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=1200"
+          alt="Hero"
+          class="w-full h-80 object-cover" />
+      </section>
+
+      <!-- ARTICLE CONTENT -->
+      <article class="space-y-8">
+        <p class="text-gray-700 leading-relaxed">
+          Technology has rapidly evolved over the past decades, reshaping
+          industries and society. From AI to smart cities, the pace of
+          innovation continues to accelerate.
+        </p>
+
+        <div class="grid lg:grid-cols-2 gap-6 items-center">
+          <img
+            src="https://picsum.photos/300/200?random=10?w=600"
+            alt="AI Tech"
+            class="rounded-lg shadow-md" />
+          <div>
+            <h2 class="text-2xl font-bold mb-3">
+              Artificial Intelligence Revolution
+            </h2>
+            <p class="text-gray-700 mb-2">
+              AI is becoming central to businesses and daily life. Automation,
+              data analytics, and machine learning are just the beginning.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-6 items-center">
+          <div>
+            <h2 class="text-2xl font-bold mb-3">
+              Smart Cities &amp; Sustainability
+            </h2>
+            <p class="text-gray-700">
+              IoT and sustainable innovations are shaping cities that are safer,
+              greener, and more efficient for their citizens.
+            </p>
+          </div>
+          <img
+            src="https://picsum.photos/300/200?random=10?w=600"
+            alt="Smart City"
+            class="rounded-lg shadow-md" />
+        </div>
+
+        <p class="text-gray-700 leading-relaxed">
+          Staying informed and adapting to technological changes is essential
+          for individuals, businesses, and governments alike.
+        </p>
+      </article>
+
+      <!-- YOU MAY ALSO LIKE -->
+      <section class="space-y-4">
+        <h2 class="text-2xl font-bold">You May Also Like</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a
+            href="#"
+            class="group block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+            <img
+              src="https://picsum.photos/300/200?random=11"
+              alt="Related 2"
+              class="w-full h-40 object-cover group-hover:scale-105 transition-transform" />
+            <div class="p-4 bg-white">
+              <p class="text-xs uppercase text-gray-500 mb-1">Tech</p>
+              <h3 class="font-semibold group-hover:text-blue-600 transition">
+                AI Breakthrough Promises Smarter Devices
+              </h3>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="group block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+            <img
+              src="https://picsum.photos/300/200?random=11"
+              alt="Related 2"
+              class="w-full h-40 object-cover group-hover:scale-105 transition-transform" />
+            <div class="p-4 bg-white">
+              <p class="text-xs uppercase text-gray-500 mb-1">Tech</p>
+              <h3 class="font-semibold group-hover:text-blue-600 transition">
+                AI Breakthrough Promises Smarter Devices
+              </h3>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="group block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+            <img
+              src="https://picsum.photos/300/200?random=12"
+              alt="Related 3"
+              class="w-full h-40 object-cover group-hover:scale-105 transition-transform" />
+            <div class="p-4 bg-white">
+              <p class="text-xs uppercase text-gray-500 mb-1">World</p>
+              <h3 class="font-semibold group-hover:text-blue-600 transition">
+                UN Summit Addresses Climate Crisis
+              </h3>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="group block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+            <img
+              src="https://picsum.photos/300/200?random=13"
+              alt="Related 4"
+              class="w-full h-40 object-cover group-hover:scale-105 transition-transform" />
+            <div class="p-4 bg-white">
+              <p class="text-xs uppercase text-gray-500 mb-1">Sports</p>
+              <h3 class="font-semibold group-hover:text-blue-600 transition">
+                Championship Game Ends in Stunning Upset
+              </h3>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="group block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+            <img
+              src="https://picsum.photos/300/200?random=14"
+              alt="Related 5"
+              class="w-full h-40 object-cover group-hover:scale-105 transition-transform" />
+            <div class="p-4 bg-white">
+              <p class="text-xs uppercase text-gray-500 mb-1">Health</p>
+              <h3 class="font-semibold group-hover:text-blue-600 transition">
+                Meditation Benefits: Mind &amp; Body
+              </h3>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="group block rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+            <img
+              src="https://picsum.photos/300/200?random=15"
+              alt="Related 6"
+              class="w-full h-40 object-cover group-hover:scale-105 transition-transform" />
+            <div class="p-4 bg-white">
+              <p class="text-xs uppercase text-gray-500 mb-1">Lifestyle</p>
+              <h3 class="font-semibold group-hover:text-blue-600 transition">
+                Digital Detox Tips for Everyone
+              </h3>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-gray-900 text-gray-400 text-sm text-center py-6 mt-16 transition-smooth hover:text-white">
+      © 2025 TechNews. All rights reserved.
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("slide-down-enter-active");
+      });
+
+      // Fade-up animation on scroll
+      const fadeEls = document.querySelectorAll(".fade-up");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      fadeEls.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
