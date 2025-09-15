@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="article.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-inner">
+        <a href="#">HOME</a>
+        <a href="#">BUSINESS</a>
+        <a href="#">MARKET</a>
+        <a href="#">MONEY</a>
+        <a href="#">FEATURES ▾</a>
+      </div>
+    </header>
+    <main
+      class="max-w-7xl mx-auto p-4 grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
+      <!-- Left Content -->
+      <section class="lg:col-span-2 space-y-6">
+        <!-- HERO IMAGE -->
+        <div class="relative w-full h-96 rounded-lg overflow-hidden">
+          <img
+            src="https://picsum.photos/400/250?random=301?w=1600"
+            alt="Article Hero"
+            class="w-full h-full object-cover brightness-90" />
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 flex flex-col justify-end p-6">
+            <h1 class="text-white text-3xl md:text-4xl font-bold mt-2">
+              The Future of AI: Innovations That Will Change Our World
+            </h1>
+          </div>
+        </div>
+
+        <!-- ARTICLE CONTENT -->
+        <article class="space-y-6 text-gray-700 text-lg leading-relaxed">
+          <p>
+            Artificial Intelligence is advancing faster than many experts
+            predicted. From healthcare to transportation, AI is transforming
+            industries worldwide.
+          </p>
+
+          <figure class="rounded-lg overflow-hidden">
+            <img
+              src="https://picsum.photos/400/250?random=301?w=1200"
+              alt="AI Workspace"
+              class="w-full object-cover" />
+            <figcaption class="text-sm text-gray-500 mt-2 text-center italic">
+              Innovative AI workspaces are emerging in tech hubs globally.
+            </figcaption>
+          </figure>
+
+          <p>
+            Generative AI models are capable of creating, predicting, and
+            optimizing at levels previously unimaginable, opening a new era of
+            innovation.
+          </p>
+
+          <h2 class="text-2xl font-bold mt-6">Why AI Matters</h2>
+          <p>
+            AI can improve efficiency, reduce errors, and help humans solve
+            complex problems faster than ever before.
+          </p>
+        </article>
+
+        <!-- YOU MAY ALSO LIKE -->
+        <section class="mt-10">
+          <h2 class="text-2xl font-bold mb-6">You May Also Like</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+            <a
+              href="#"
+              class="group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
+              <img
+                src="https://picsum.photos/400/250?random=301"
+                alt=""
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <p class="text-xs text-blue-400 uppercase">Technology</p>
+                <h3
+                  class="text-white font-semibold text-lg group-hover:underline">
+                  Top AI Startups to Watch in 2025
+                </h3>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
+              <img
+                src="https://picsum.photos/400/250?random=302"
+                alt=""
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <p class="text-xs text-green-400 uppercase">Science</p>
+                <h3
+                  class="text-white font-semibold text-lg group-hover:underline">
+                  How AI is Revolutionizing Space Exploration
+                </h3>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
+              <img
+                src="https://picsum.photos/400/250?random=303"
+                alt=""
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <p class="text-xs text-red-400 uppercase">Health</p>
+                <h3
+                  class="text-white font-semibold text-lg group-hover:underline">
+                  AI in Healthcare: What Patients Should Know
+                </h3>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition">
+              <img
+                src="https://picsum.photos/400/250?random=304"
+                alt=""
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <p class="text-xs text-yellow-400 uppercase">World</p>
+                <h3
+                  class="text-white font-semibold text-lg group-hover:underline">
+                  Global AI Policies: Governments Embrace Innovation
+                </h3>
+              </div>
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <!-- Right Sidebar -->
+      <aside class="lg:col-span-1 space-y-8 sticky top-6">
+        <!-- Recent Posts -->
+        <div class="bg-white p-6 rounded-lg shadow-md space-y-4">
+          <h2 class="text-xl font-bold mb-3">Recent Posts</h2>
+          <ul class="space-y-4">
+            <li class="flex gap-3 items-start">
+              <img
+                src="https://picsum.photos/80/80?random=401"
+                alt=""
+                class="w-20 h-20 object-cover rounded-md" />
+              <div>
+                <h3 class="font-semibold text-gray-900 text-sm">
+                  Tips for Improving Your Quality of Life Today
+                </h3>
+                <p class="text-gray-500 text-xs mt-1">Sep 3, 2025</p>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <img
+                src="https://picsum.photos/80/80?random=402"
+                alt=""
+                class="w-20 h-20 object-cover rounded-md" />
+              <div>
+                <h3 class="font-semibold text-gray-900 text-sm">
+                  Workout Equipment and Modern Fight
+                </h3>
+                <p class="text-gray-500 text-xs mt-1">Sep 3, 2025</p>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <img
+                src="https://picsum.photos/80/80?random=403"
+                alt=""
+                class="w-20 h-20 object-cover rounded-md" />
+              <div>
+                <h3 class="font-semibold text-gray-900 text-sm">
+                  Most Common Gyme &amp; Machines at the Gym
+                </h3>
+                <p class="text-gray-500 text-xs mt-1">Sep 3, 2025</p>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <img
+                src="https://picsum.photos/80/80?random=401"
+                alt=""
+                class="w-20 h-20 object-cover rounded-md" />
+              <div>
+                <h3 class="font-semibold text-gray-900 text-sm">
+                  Tips for Improving Your Quality of Life Today
+                </h3>
+                <p class="text-gray-500 text-xs mt-1">Sep 3, 2025</p>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <img
+                src="https://picsum.photos/80/80?random=401"
+                alt=""
+                class="w-20 h-20 object-cover rounded-md" />
+              <div>
+                <h3 class="font-semibold text-gray-900 text-sm">
+                  Tips for Improving Your Quality of Life Today
+                </h3>
+                <p class="text-gray-500 text-xs mt-1">Sep 3, 2025</p>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <img
+                src="https://picsum.photos/80/80?random=401"
+                alt=""
+                class="w-20 h-20 object-cover rounded-md" />
+              <div>
+                <h3 class="font-semibold text-gray-900 text-sm">
+                  Tips for Improving Your Quality of Life Today
+                </h3>
+                <p class="text-gray-500 text-xs mt-1">Sep 3, 2025</p>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <img
+                src="https://picsum.photos/80/80?random=401"
+                alt=""
+                class="w-20 h-20 object-cover rounded-md" />
+              <div>
+                <h3 class="font-semibold text-gray-900 text-sm">
+                  Tips for Improving Your Quality of Life Today
+                </h3>
+                <p class="text-gray-500 text-xs mt-1">Sep 3, 2025</p>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <img
+                src="https://picsum.photos/80/80?random=401"
+                alt=""
+                class="w-20 h-20 object-cover rounded-md" />
+              <div>
+                <h3 class="font-semibold text-gray-900 text-sm">
+                  Tips for Improving Your Quality of Life Today
+                </h3>
+                <p class="text-gray-500 text-xs mt-1">Sep 3, 2025</p>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <img
+                src="https://picsum.photos/80/80?random=401"
+                alt=""
+                class="w-20 h-20 object-cover rounded-md" />
+              <div>
+                <h3 class="font-semibold text-gray-900 text-sm">
+                  Tips for Improving Your Quality of Life Today
+                </h3>
+                <p class="text-gray-500 text-xs mt-1">Sep 3, 2025</p>
+              </div>
+            </li>
+            <li class="flex gap-3 items-start">
+              <img
+                src="https://picsum.photos/80/80?random=401"
+                alt=""
+                class="w-20 h-20 object-cover rounded-md" />
+              <div>
+                <h3 class="font-semibold text-gray-900 text-sm">
+                  Tips for Improving Your Quality of Life Today
+                </h3>
+                <p class="text-gray-500 text-xs mt-1">Sep 3, 2025</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+    <footer class="site-footer">
+      <p>© 2025 Your News Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+</html>
