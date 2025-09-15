@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center py-4">
+          <!-- Nav + Hamburger -->
+          <div class="flex items-center ml-auto space-x-6">
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-6 font-medium">
+              <a href="#" class="hover:text-blue-600">Home</a>
+              <a href="#" class="hover:text-blue-600">Post Features</a>
+              <a href="#" class="hover:text-blue-600">Food &amp; Diet</a>
+              <a href="#" class="hover:text-blue-600">Nutrition</a>
+              <a href="#" class="hover:text-blue-600">Pages</a>
+              <a href="#" class="hover:text-blue-600">Bookmark</a>
+            </nav>
+
+            <!-- Hamburger -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="menu" class="hidden md:hidden bg-white shadow-lg">
+        <nav class="flex flex-col space-y-4 px-6 py-4">
+          <a href="#" class="hover:text-blue-600">Home</a>
+          <a href="#" class="hover:text-blue-600">Post Features</a>
+          <a href="#" class="hover:text-blue-600">Food &amp; Diet</a>
+          <a href="#" class="hover:text-blue-600">Nutrition</a>
+          <a href="#" class="hover:text-blue-600">Pages</a>
+          <a href="#" class="hover:text-blue-600">Bookmark</a>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="max-w-7xl mx-auto p-4 grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
+      <!-- Left Content -->
+      <section class="lg:col-span-2">
+        <!-- Category -->
+        <span class="bg-blue-500 text-white text-sm px-3 py-1 rounded">
+          Nutrition
+        </span>
+
+        <!-- Title -->
+        <h1 class="text-3xl md:text-4xl font-bold mt-4 leading-snug">
+          Skin Type Before Choosing Skin Care Products
+        </h1>
+
+        <!-- Meta info -->
+        <div
+          class="flex flex-wrap items-center gap-4 text-gray-500 text-sm mt-3">
+          <div class="flex items-center gap-2">
+            <img
+              src="https://byteflows.net/wp/forcast-main/wp/helth/wp-content/uploads/sites/3/2024/03/main.webp"
+              alt="Author"
+              class="w-8 h-8 rounded-full" />
+            <span class="font-medium text-gray-700">Empath</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-calendar"></i>
+            <span>March 26, 2024</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-comment"></i>
+            <span>3 Comments</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-eye"></i>
+            <span>563 Views</span>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <p class="mt-5 text-lg text-gray-600 leading-relaxed">
+          Embracing a balanced lifestyle is key to achieving overall well-being
+          and happiness. Start by practicing mindfulness through meditation or
+          journaling, which helps reduce stress and improve mental clarity.
+        </p>
+
+        <!-- Image -->
+        <div class="mt-6">
+          <img
+            src="https://byteflows.net/wp/forcast-main/wp/helth/wp-content/uploads/sites/3/2024/03/main.webp"
+            alt="Article"
+            class="w-full object-cover" />
+        </div>
+        <!-- Top Paragraph -->
+        <p class="mt-4">
+          Lorem ipsum dolor sit amet. Ut distinctio galisum ea laborum esse sed
+          debitis galisum ea dolore any delectus dolore reprehenderit?
+          <strong class="font-semibold"
+            >Qui architecto explicabo est soluta consequatur</strong
+          >
+          in eius that nemo architecto quo galisum tempore.
+        </p>
+
+        <!-- Heading -->
+        <h2 class="text-2xl font-bold mb-4">Where can I get some?</h2>
+
+        <!-- Paragraphs -->
+        <p class="mb-6">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, the totam rem aperiam, the eaque
+          ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+          dicta sunt explicabo. Nemo ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia any at consequuntur magni
+          dolores eos qui ratione voluptatem sequi nesciunt.
+        </p>
+
+        <p class="mb-8">
+          Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+          doloremque laudantium, totam rem aperiam, the eaque ipsa quaet quasi
+          architecto beatae vitae dicta sunt explicabo.
+        </p>
+
+        <!-- Contents Section -->
+        <div class="mb-6">
+          <h3 class="font-bold mb-4">Contents</h3>
+          <div class="grid grid-cols-2 gap-y-3 gap-x-8">
+            <div class="flex items-start space-x-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-sky-500 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"></circle>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2l4-4"></path>
+              </svg>
+              <span class="font-semibold"
+                >Website should be easy to navigate</span
+              >
+            </div>
+            <div class="flex items-start space-x-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-sky-500 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"></circle>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2l4-4"></path>
+              </svg>
+              <span class="font-semibold"
+                >Creating visual rhythms in your layouts</span
+              >
+            </div>
+            <div class="flex items-start space-x-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-sky-500 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"></circle>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2l4-4"></path>
+              </svg>
+              <span class="font-semibold">Help website visual composition</span>
+            </div>
+            <div class="flex items-start space-x-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-sky-500 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"></circle>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2l4-4"></path>
+              </svg>
+              <span class="font-semibold">Diving into UX and UI design</span>
+            </div>
+            <div class="flex items-start space-x-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-sky-500 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"></circle>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2l4-4"></path>
+              </svg>
+              <span class="font-semibold"
+                >Interactive elements are easy to identify</span
+              >
+            </div>
+            <div class="flex items-start space-x-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 text-sky-500 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"></circle>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2l4-4"></path>
+              </svg>
+              <span class="font-semibold">Breaking down the barriers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Text -->
+        <p>
+          Tomfoolery tosser zonked arse over tit brown bread twit it’s all gone
+          to pot spiffing good time only a quid golly gosh, such a
+          <strong class="font-semibold"
+            >fibber victoria sponge bleeding vagabond</strong
+          >
+          he lost his bottle as bog dummy codswallop. Baking cakes said william
+          daft wind up chap brilliant.
+        </p>
+        <!-- Article Content -->
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-lg font-semibold mb-2">Where can I get some?</h2>
+          <p class="mb-4">
+            Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+            inventore veritatis architecto beatae vitae explicabo. Nemo ipsam
+            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem sequi
+            nesciunt.
+          </p>
+          <p class="mb-6">
+            Sed ut perspiciatis unde omnis iste natus error accusantium
+            doloremque laudantium, totam rem aperiam, the eaque ipsa quae quasi
+            architecto beatae vitae dicta sunt explicabo.
+          </p>
+
+          <!-- Suggested Articles -->
+          <h3 class="text-lg font-semibold mb-3">You Might Also Like</h3>
+          <ul class="list-none space-y-2 mb-8">
+            <li>+ Potential HIV Vaccine Falls Short in Mid-stage Study</li>
+            <li>
+              + Medicaid Expansion Improves Hypertension and Diabetes Control
+            </li>
+            <li>
+              + Long-Term Care Needs Among Retirees Varies Widely, New Research
+              Shows
+            </li>
+            <li>
+              + Benefits of Yoga: 10 Ways Your Practice Can Improve Your Life
+            </li>
+            <li>+ What Are Some Ways to Prevent the Spread of COVID-19?</li>
+          </ul>
+
+          <!-- Rating Section -->
+
+          <!-- Tags and Social Icons -->
+        </div>
+      </section>
+
+      <!-- Right Sidebar -->
+      <aside
+        class="bg-white-600 text-white p-6 flex flex-col items-center justify-center sticky top-6 h-fit">
+        <!-- Recent Post Section -->
+        <div>
+          <h2 class="text-xl font-bold mb-2">Recent Post</h2>
+          <hr class="mb-4" />
+
+          <!-- Post Item -->
+          <div class="flex items-start space-x-4 mb-6">
+            <img
+              src="https://byteflows.net/wp/forcast-main/wp/helth/wp-content/uploads/sites/3/2024/03/main.webp"
+              alt="Post Thumbnail"
+              class="w-20 h-20 object-cover rounded-md" />
+            <div>
+              <h3 class="font-semibold text-gray-900 leading-snug">
+                Tips for Improving Your Quality of Life Today
+              </h3>
+              <div class="flex items-center text-gray-600 text-sm mt-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 mr-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"></path>
+                </svg>
+                September 3, 2025
+              </div>
+            </div>
+          </div>
+
+          <!-- Post Item -->
+          <div class="flex items-start space-x-4 mb-6">
+            <img
+              src="https://byteflows.net/wp/forcast-main/wp/helth/wp-content/uploads/sites/3/2024/03/main.webp"
+              alt="Post Thumbnail"
+              class="w-20 h-20 object-cover rounded-md" />
+            <div>
+              <h3 class="font-semibold text-gray-900 leading-snug">
+                Workout Equipment and Modern Fight
+              </h3>
+              <div class="flex items-center text-gray-600 text-sm mt-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 mr-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"></path>
+                </svg>
+                September 3, 2025
+              </div>
+            </div>
+          </div>
+
+          <!-- Post Item -->
+          <div class="flex items-start space-x-4 mb-6">
+            <img
+              src="https://byteflows.net/wp/forcast-main/wp/helth/wp-content/uploads/sites/3/2024/03/main.webp"
+              alt="Post Thumbnail"
+              class="w-20 h-20 object-cover rounded-md" />
+            <div>
+              <h3 class="font-semibold text-gray-900 leading-snug">
+                Most Common Gyme &amp; Machines at the Gym
+              </h3>
+              <div class="flex items-center text-gray-600 text-sm mt-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 mr-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"></path>
+                </svg>
+                September 3, 2025
+              </div>
+            </div>
+          </div>
+
+          <!--Post Item-->
+
+          <div class="flex items-start space-x-4 mb-6">
+            <img
+              src="https://byteflows.net/wp/forcast-main/wp/helth/wp-content/uploads/sites/3/2024/03/main.webp"
+              alt="Post Thumbnail"
+              class="w-20 h-20 object-cover rounded-md" />
+            <div>
+              <h3 class="font-semibold text-gray-900 leading-snug">
+                Workout Equipment and Modern Fight
+              </h3>
+              <div class="flex items-center text-gray-600 text-sm mt-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 mr-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"></path>
+                </svg>
+                September 3, 2025
+              </div>
+            </div>
+          </div>
+
+          <!-- Post Item -->
+          <div class="flex items-start space-x-4">
+            <img
+              src="https://byteflows.net/wp/forcast-main/wp/helth/wp-content/uploads/sites/3/2024/03/main.webp"
+              alt="Post Thumbnail"
+              class="w-20 h-20 object-cover rounded-md" />
+            <div>
+              <h3 class="font-semibold text-gray-900 leading-snug">
+                Daily Common Gyme &amp; Machines at the Gym
+              </h3>
+              <div class="flex items-center text-gray-600 text-sm mt-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 mr-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"></path>
+                </svg>
+                September 3, 2025
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 mt-10">
+      <div class="max-w-7xl mx-auto text-center">
+        <p>© 2025 Forcast Clone. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+</html>
