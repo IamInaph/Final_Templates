@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>News Sections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-br from-gray-100 to-gray-200">
+    <!-- Navbar -->
+    <header class="bg-green-900 shadow-md backdrop-blur-sm sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 lg:px-12 flex items-center justify-between py-3 font-bold text-lg relative">
+        <!-- Logo -->
+        <a
+          href="#"
+          class="text-green-100 text-2xl font-extrabold transition-smooth hover:text-green-400 hover:scale-105"
+          >TechNews</a
+        >
+
+        <!-- Hamburger button (mobile) -->
+        <button
+          id="menu-btn"
+          class="block lg:hidden text-green-100 focus:outline-none transition-smooth hover:text-green-400">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Menu -->
+        <ul
+          id="menu"
+          class="hidden lg:flex flex-col lg:flex-row gap-6 text-green-100 absolute lg:static top-full left-0 w-full lg:w-auto bg-green-900 lg:bg-transparent px-6 py-4 lg:p-0 transition-smooth">
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Demos +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Blog +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Post Demos +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Authors</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Contacts</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Smartphones</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Tablets</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Wearables</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Domotics</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Tutorials</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--  HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-4 py-14">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Big Post -->
+        <div
+          class="relative col-span-2 group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=900&q=60"
+              class="w-full h-96 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+          </div>
+          <div
+            class="absolute top-4 left-4 bg-pink-600 text-white text-xs px-3 py-1 rounded shadow-md group-hover:scale-105 transition">
+            FASHION
+          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-xl">
+            <h2
+              class="text-white text-2xl font-semibold mb-2 group-hover:text-pink-400 transition">
+              Help reader survey make mfs better with our reader
+            </h2>
+            <div class="flex items-center text-white text-sm space-x-4">
+              <span class="flex items-center space-x-2"
+                ><img
+                  src="https://i.pravatar.cc/30"
+                  class="w-6 h-6 rounded-full" />
+                <span>Vinkmag</span></span
+              >
+              <span>📅 January 1, 2019</span>
+              <span>🔥 3265</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="flex flex-col gap-6">
+          <!-- Top Post -->
+          <div
+            class="relative group rounded-xl overflow-hidden shadow hover:shadow-xl transition duration-500">
+            <div class="overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=60"
+                class="w-full h-44 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            <div
+              class="absolute top-3 left-3 bg-pink-600 text-white text-xs px-2 py-1 rounded group-hover:scale-105 transition">
+              FASHION
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-xl">
+              <h3
+                class="text-white text-lg font-semibold group-hover:text-pink-300 transition">
+                Netcix cuts out the chill with an integrated personal trainer on
+              </h3>
+              <p class="text-white text-xs mt-1">📅 November 15, 2018</p>
+            </div>
+          </div>
+
+          <!-- Bottom Post -->
+          <div
+            class="relative group rounded-xl overflow-hidden shadow hover:shadow-xl transition duration-500">
+            <div class="overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=60"
+                class="w-full h-44 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            <div
+              class="absolute top-3 left-3 bg-green-600 text-white text-xs px-2 py-1 rounded group-hover:scale-105 transition">
+              SPORTS
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-xl">
+              <h3
+                class="text-white text-lg font-semibold group-hover:text-green-300 transition">
+                Vontae Davis Quit on the Bills at Halftime, Changed into
+              </h3>
+              <p class="text-white text-xs mt-1">📅 December 7, 2018</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  POPULAR POSTS SECTION  -->
+    <section class="max-w-7xl mx-auto px-4 py-14">
+      <h2 class="text-2xl font-bold mb-6 text-gray-800">Popular Posts</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Single Card -->
+        <div
+          class="relative group rounded-xl overflow-hidden shadow hover:shadow-2xl transition duration-500">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60"
+              class="w-full h-48 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+          </div>
+          <div
+            class="absolute top-3 left-3 bg-purple-600 text-white text-xs px-2 py-1 rounded group-hover:scale-105 transition">
+            MUSIC
+          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-xl">
+            <h3
+              class="text-white font-semibold text-lg group-hover:text-purple-300 transition">
+              Success humble is good not teacher failure makes you
+            </h3>
+            <p class="text-white text-xs mt-1">📅 December 10, 2018</p>
+          </div>
+        </div>
+        <div
+          class="relative group rounded-xl overflow-hidden shadow hover:shadow-2xl transition duration-500">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60"
+              class="w-full h-48 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+          </div>
+          <div
+            class="absolute top-3 left-3 bg-purple-600 text-white text-xs px-2 py-1 rounded group-hover:scale-105 transition">
+            MUSIC
+          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-xl">
+            <h3
+              class="text-white font-semibold text-lg group-hover:text-purple-300 transition">
+              Success humble is good not teacher failure makes you
+            </h3>
+            <p class="text-white text-xs mt-1">📅 December 10, 2018</p>
+          </div>
+        </div>
+        <div
+          class="relative group rounded-xl overflow-hidden shadow hover:shadow-2xl transition duration-500">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60"
+              class="w-full h-48 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+          </div>
+          <div
+            class="absolute top-3 left-3 bg-purple-600 text-white text-xs px-2 py-1 rounded group-hover:scale-105 transition">
+            MUSIC
+          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-xl">
+            <h3
+              class="text-white font-semibold text-lg group-hover:text-purple-300 transition">
+              Success humble is good not teacher failure makes you
+            </h3>
+            <p class="text-white text-xs mt-1">📅 December 10, 2018</p>
+          </div>
+        </div>
+        <div
+          class="relative group rounded-xl overflow-hidden shadow hover:shadow-2xl transition duration-500">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60"
+              class="w-full h-48 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+          </div>
+          <div
+            class="absolute top-3 left-3 bg-purple-600 text-white text-xs px-2 py-1 rounded group-hover:scale-105 transition">
+            MUSIC
+          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-xl">
+            <h3
+              class="text-white font-semibold text-lg group-hover:text-purple-300 transition">
+              Success humble is good not teacher failure makes you
+            </h3>
+            <p class="text-white text-xs mt-1">📅 December 10, 2018</p>
+          </div>
+        </div>
+        <div
+          class="relative group rounded-xl overflow-hidden shadow hover:shadow-2xl transition duration-500">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60"
+              class="w-full h-48 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+          </div>
+          <div
+            class="absolute top-3 left-3 bg-purple-600 text-white text-xs px-2 py-1 rounded group-hover:scale-105 transition">
+            MUSIC
+          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-xl">
+            <h3
+              class="text-white font-semibold text-lg group-hover:text-purple-300 transition">
+              Success humble is good not teacher failure makes you
+            </h3>
+            <p class="text-white text-xs mt-1">📅 December 10, 2018</p>
+          </div>
+        </div>
+        <div
+          class="relative group rounded-xl overflow-hidden shadow hover:shadow-2xl transition duration-500">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=60"
+              class="w-full h-48 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+          </div>
+          <div
+            class="absolute top-3 left-3 bg-purple-600 text-white text-xs px-2 py-1 rounded group-hover:scale-105 transition">
+            MUSIC
+          </div>
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 rounded-b-xl">
+            <h3
+              class="text-white font-semibold text-lg group-hover:text-purple-300 transition">
+              Success humble is good not teacher failure makes you
+            </h3>
+            <p class="text-white text-xs mt-1">📅 December 10, 2018</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP PICK BY AUTHORS SECTION-->
+    <section class="max-w-7xl mx-auto px-4 py-14">
+      <h2 class="text-2xl font-bold mb-6 text-gray-800">Top pick by authors</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div
+            class="relative group rounded-xl overflow-hidden shadow hover:shadow-xl transition duration-500 mb-4">
+            <div class="overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=60"
+                class="w-full h-52 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            <div
+              class="absolute top-3 left-3 bg-pink-600 text-white text-xs px-2 py-1 rounded group-hover:scale-105 transition">
+              FASHION
+            </div>
+          </div>
+          <div class="mt-2 text-sm text-gray-500">📅 November 15, 2018</div>
+          <h3 class="text-lg font-semibold mt-1 group-hover:text-pink-400">
+            Netcix cuts out the chill with an integrated personal trainer on
+          </h3>
+          <!-- Mini posts -->
+          <div class="mt-4 space-y-3">
+            <div
+              class="flex items-center gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <img
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=80&q=60"
+                class="w-14 h-14 object-cover rounded" />
+              <div>
+                <span class="text-purple-600 text-sm font-medium">Music</span>
+                <p class="text-sm">The clock is ticking for e-cig companies</p>
+                <span class="text-xs text-gray-500">📅 November 15, 2018</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <img
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=80&q=60"
+                class="w-14 h-14 object-cover rounded" />
+              <div>
+                <span class="text-purple-600 text-sm font-medium">Music</span>
+                <p class="text-sm">The clock is ticking for e-cig companies</p>
+                <span class="text-xs text-gray-500">📅 November 15, 2018</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <img
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=80&q=60"
+                class="w-14 h-14 object-cover rounded" />
+              <div>
+                <span class="text-purple-600 text-sm font-medium">Music</span>
+                <p class="text-sm">The clock is ticking for e-cig companies</p>
+                <span class="text-xs text-gray-500">📅 November 15, 2018</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="relative group rounded-xl overflow-hidden shadow hover:shadow-xl transition duration-500 mb-4">
+            <div class="overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=60"
+                class="w-full h-52 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            <div
+              class="absolute top-3 left-3 bg-pink-600 text-white text-xs px-2 py-1 rounded group-hover:scale-105 transition">
+              FASHION
+            </div>
+          </div>
+          <div class="mt-2 text-sm text-gray-500">📅 November 15, 2018</div>
+          <h3 class="text-lg font-semibold mt-1 group-hover:text-pink-400">
+            Netcix cuts out the chill with an integrated personal trainer on
+          </h3>
+          <!-- Mini posts -->
+          <div class="mt-4 space-y-3">
+            <div
+              class="flex items-center gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <img
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=80&q=60"
+                class="w-14 h-14 object-cover rounded" />
+              <div>
+                <span class="text-purple-600 text-sm font-medium">Music</span>
+                <p class="text-sm">The clock is ticking for e-cig companies</p>
+                <span class="text-xs text-gray-500">📅 November 15, 2018</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <img
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=80&q=60"
+                class="w-14 h-14 object-cover rounded" />
+              <div>
+                <span class="text-purple-600 text-sm font-medium">Music</span>
+                <p class="text-sm">The clock is ticking for e-cig companies</p>
+                <span class="text-xs text-gray-500">📅 November 15, 2018</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <img
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=80&q=60"
+                class="w-14 h-14 object-cover rounded" />
+              <div>
+                <span class="text-purple-600 text-sm font-medium">Music</span>
+                <p class="text-sm">The clock is ticking for e-cig companies</p>
+                <span class="text-xs text-gray-500">📅 November 15, 2018</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="relative group rounded-xl overflow-hidden shadow hover:shadow-xl transition duration-500 mb-4">
+            <div class="overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=60"
+                class="w-full h-52 object-cover rounded-xl transition-transform duration-500 group-hover:scale-110" />
+            </div>
+            <div
+              class="absolute top-3 left-3 bg-pink-600 text-white text-xs px-2 py-1 rounded group-hover:scale-105 transition">
+              FASHION
+            </div>
+          </div>
+          <div class="mt-2 text-sm text-gray-500">📅 November 15, 2018</div>
+          <h3 class="text-lg font-semibold mt-1 group-hover:text-pink-400">
+            Netcix cuts out the chill with an integrated personal trainer on
+          </h3>
+          <!-- Mini posts -->
+          <div class="mt-4 space-y-3">
+            <div
+              class="flex items-center gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <img
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=80&q=60"
+                class="w-14 h-14 object-cover rounded" />
+              <div>
+                <span class="text-purple-600 text-sm font-medium">Music</span>
+                <p class="text-sm">The clock is ticking for e-cig companies</p>
+                <span class="text-xs text-gray-500">📅 November 15, 2018</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <img
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=80&q=60"
+                class="w-14 h-14 object-cover rounded" />
+              <div>
+                <span class="text-purple-600 text-sm font-medium">Music</span>
+                <p class="text-sm">The clock is ticking for e-cig companies</p>
+                <span class="text-xs text-gray-500">📅 November 15, 2018</span>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <img
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=80&q=60"
+                class="w-14 h-14 object-cover rounded" />
+              <div>
+                <span class="text-purple-600 text-sm font-medium">Music</span>
+                <p class="text-sm">The clock is ticking for e-cig companies</p>
+                <span class="text-xs text-gray-500">📅 November 15, 2018</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-teal-900 text-teal-200 text-sm text-center py-6 mt-16 transition-colors hover:text-coral-400">
+      © 2025 TechNews. All rights reserved.
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("slide-down-enter-active");
+      });
+
+      // Fade-up animation on scroll
+      const fadeEls = document.querySelectorAll(".fade-up");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      fadeEls.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
