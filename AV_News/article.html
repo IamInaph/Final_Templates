@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="article.css" />
+    <title>AV News</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Optional: Add custom fonts from Google Fonts */
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Playfair+Display:wght@400;500;700&display=swap");
+
+      body {
+        font-family: "Merriweather", serif; /* A classic, readable serif for body text */
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif; /* A more elegant serif for headings */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="bg-green-800 shadow-md backdrop-blur-sm sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 lg:px-12 flex items-center justify-between py-3 font-bold text-lg relative">
+        <!-- Logo -->
+        <a
+          href="#"
+          class="text-green-100 text-2xl font-extrabold transition-smooth hover:text-green-400 hover:scale-105"
+          >AV News</a
+        >
+
+        <!-- Hamburger button (mobile) -->
+        <button
+          id="menu-btn"
+          class="block lg:hidden text-green-100 focus:outline-none transition-smooth hover:text-green-400">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Menu -->
+        <ul
+          id="menu"
+          class="hidden lg:flex flex-col lg:flex-row gap-6 text-green-100 absolute lg:static top-full left-0 w-full lg:w-auto bg-green-900 lg:bg-transparent px-6 py-4 lg:p-0 transition-smooth">
+          <li>
+            <a
+              href="article.html"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Demos +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Blog +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Post Demos +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Authors</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Contacts</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Smartphones</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Tablets</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main Content  -->
+    <main class="max-w-7xl mx-auto px-8 py-8 md:py-16">
+      <section class="mb-8">
+        <div class="aspect-video w-full rounded-lg overflow-hidden mb-6">
+          <img
+            src="https://picsum.photos/1200/600?random=1"
+            alt="Hero image for the article"
+            class="w-full h-full object-cover" />
+        </div>
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            Give me the title: enough
+          </h1>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
+        <article class="lg:col-span-2 prose max-w-none">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <h2>The Journey into the Unknown</h2>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit.
+          </p>
+          <figure>
+            <img
+              src="https://picsum.photos/800/500?random=2"
+              alt="An image related to the article content"
+              class="w-full rounded-lg" />
+            <figcaption class="text-center text-sm text-gray-500 mt-2">
+              A visually compelling image to break up the text.
+            </figcaption>
+          </figure>
+          <h3>Discovering New Horizons</h3>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident, similique sunt in culpa qui officia deserunt mollitia
+            animi, id est laborum et dolorum fuga.
+          </p>
+        </article>
+
+        <aside class="lg:col-span-1">
+          <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
+            <h3 class="font-bold text-xl mb-4">About the Article</h3>
+
+            <p class="text-sm text-gray-600">
+              Jane is a passionate writer who loves to explore new places and
+              ideas. She shares her insights on a variety of topics,
+              fconsectetur accusamus ipsum quas recusandae at. technology to
+              travel.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="font-bold text-xl mb-4">Related Articles</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="block hover:bg-gray-100 p-2 rounded-lg">
+                  <p class="font-semibold">Another Cool Article Title</p>
+                  <p class="text-sm text-gray-500">
+                    A short summary of the content.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-gray-100 p-2 rounded-lg">
+                  <p class="font-semibold">The Future of Design</p>
+                  <p class="text-sm text-gray-500">
+                    Exploring new trends in web design.
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Section 3 -->
+      <section
+        class="max-w-6xl mx-auto py-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="VR Headset"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              Virtual Reality Headset Showdown: Oculus vs. HTC Vive vs.
+              PlayStation VR
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Health
+            </span>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="Big Data"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              The Impact of Big Data on Our Daily Lives
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Emerging
+            </span>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="Big Data"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              The Impact of Big Data on Our Daily Lives
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Emerging
+            </span>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="Big Data"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              The Impact of Big Data on Our Daily Lives
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Emerging
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
+        <article class="lg:col-span-2 prose max-w-none">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <h2>The Journey into the Unknown</h2>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit.
+          </p>
+          <figure>
+            <img
+              src="https://picsum.photos/800/500?random=2"
+              alt="An image related to the article content"
+              class="w-full rounded-lg" />
+            <figcaption class="text-center text-sm text-gray-500 mt-2">
+              A visually compelling image to break up the text.
+            </figcaption>
+          </figure>
+          <h3>Discovering New Horizons</h3>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et quas molestias excepturi sint occaecati cupiditate non
+            provident, similique sunt in culpa qui officia deserunt mollitia
+            animi, id est laborum et dolorum fuga.
+          </p>
+        </article>
+
+        <aside class="lg:col-span-1">
+          <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
+            <h3 class="font-bold text-xl mb-4">About the Author</h3>
+
+            <p class="text-sm text-gray-600">
+              Jane is a passionate writer who loves to explore new places and
+              ideas. She shares her insights on a variety of topics, from
+              technology to travel.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="font-bold text-xl mb-4">Related Articles</h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="block hover:bg-gray-100 p-2 rounded-lg">
+                  <p class="font-semibold">Another Cool Article Title</p>
+                  <p class="text-sm text-gray-500">
+                    A short summary of the content.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block hover:bg-gray-100 p-2 rounded-lg">
+                  <p class="font-semibold">The Future of Design</p>
+                  <p class="text-sm text-gray-500">
+                    Exploring new trends in web design.
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Section 5  -->
+      <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="flex justify-between items-center mb-10">
+          <h2 class="text-3xl font-bold text-gray-800">More Articles</h2>
+        </div>
+
+        <div class="flex flex-wrap gap-6 pb-4">
+          <div class="bg-white shadow-md rounded-xl flex-1 min-w-[280px]">
+            <img
+              src="https://picsum.photos/300/200?random=41"
+              class="w-full h-40 object-cover rounded-t-xl"
+              alt="An abstract image representing a new discovery" />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">New Insight</h3>
+              <p class="text-gray-500 text-sm">Short description here</p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-md rounded-xl flex-1 min-w-[280px]">
+            <img
+              src="https://picsum.photos/300/200?random=42"
+              class="w-full h-40 object-cover rounded-t-xl"
+              alt="An abstract image representing a fresh perspective" />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Fresh Perspective</h3>
+              <p class="text-gray-500 text-sm">Short description here</p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-md rounded-xl flex-1 min-w-[280px]">
+            <img
+              src="https://picsum.photos/300/200?random=43"
+              class="w-full h-40 object-cover rounded-t-xl"
+              alt="An abstract image representing a breaking idea" />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Breaking Idea</h3>
+              <p class="text-gray-500 text-sm">Short description here</p>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-md rounded-xl flex-1 min-w-[280px]">
+            <img
+              src="https://picsum.photos/300/200?random=44"
+              class="w-full h-40 object-cover rounded-t-xl"
+              alt="An abstract image representing an exclusive piece" />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Exclusive Piece</h3>
+              <p class="text-gray-500 text-sm">Short description here</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="bg-teal-900 text-teal-200 text-sm text-center py-6 mt-16 transition-colors hover:text-coral-400">
+      © 2025 TechNews. All rights reserved.
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("slide-down-enter-active");
+      });
+
+      // Fade-up animation on scroll
+      const fadeEls = document.querySelectorAll(".fade-up");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      fadeEls.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
