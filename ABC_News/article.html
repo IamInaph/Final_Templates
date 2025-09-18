@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC News</title>
+    <link rel="stylesheet" href="article.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-green-900 shadow-md backdrop-blur-sm sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 lg:px-12 flex items-center justify-between py-3 font-bold text-lg relative">
+        <!-- Logo -->
+        <a
+          href="#"
+          class="text-green-100 text-2xl font-extrabold transition-smooth hover:text-green-400 hover:scale-105"
+          >ABC News</a
+        >
+
+        <!-- Hamburger button (mobile) -->
+        <button
+          id="menu-btn"
+          class="block lg:hidden text-green-100 focus:outline-none transition-smooth hover:text-green-400">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Menu -->
+        <ul
+          id="menu"
+          class="hidden lg:flex flex-col lg:flex-row gap-6 text-green-100 absolute lg:static top-full left-0 w-full lg:w-auto bg-green-900 lg:bg-transparent px-6 py-4 lg:p-0 transition-smooth">
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Demos +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Blog +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Post Demos +</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Authors</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Contacts</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Smartphones</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block lg:inline-block transition-smooth hover:text-green-400 hover:scale-105"
+              >Tablets</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="bg-white text-black font-sans mx-2 my-2">
+      <!-- Section 1 -->
+      <section class="max-w-6xl mx-auto py-10">
+        <!-- Image: full width on mobile, floated on desktop -->
+        <img
+          src="https://images.unsplash.com/photo-1526498460520-4c246339dccb"
+          alt="Camera Discounts"
+          class="w-full md:w-1/3 md:float-left md:mr-6 mb-4 rounded-md shadow-md" />
+
+        <p class="font-bold text-lg mb-4">
+          In today’s digital age, smart home security has become a necessity.
+        </p>
+        <p class="mb-4">
+          Advanced surveillance systems, smart door and window sensors, and
+          intelligent locks offer unparalleled protection. These systems provide
+          real-time notifications, remote access, and customizable automation.
+          For instance, high-definition cameras with advanced analytics can
+          detect unusual activities, while smart locks with biometric
+          authentication provide enhanced security.
+        </p>
+        <p class="mb-4">
+          While privacy concerns and cybersecurity risks exist, the benefits of
+          enhanced deterrence, proactive monitoring, and convenience outweigh
+          the challenges. Smart home security systems can deter potential
+          intruders with their visible presence and advanced features.
+          Additionally, real-time notifications and automated responses enable
+          homeowners to take immediate action. Furthermore, remote access and
+          voice control provide flexibility and ease of use.
+        </p>
+        <p>
+          As technology continues to advance, smart home security will
+          undoubtedly play a pivotal role in safeguarding our homes and personal
+          belongings. By leveraging advancements in AI, IoT, and cloud
+          computing, we can create more secure, convenient, and personalized
+          living spaces.
+        </p>
+
+        <!-- clear float only for larger screens -->
+        <div class="clear-both hidden md:block"></div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="max-w-6xl mx-auto py-12">
+        <h2 class="text-2xl font-bold mb-6 text-center">
+          The Rise of Smart Home Security
+        </h2>
+        <div class="flex flex-col items-center">
+          <img
+            src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=1200"
+            alt="Smart Home Device"
+            class="w-full max-w-4xl rounded-md shadow-md mb-6" />
+          <p class="text-center max-w-3xl">
+            Smart home security systems have seen a tremendous rise in
+            popularity, with the market expected to grow exponentially in the
+            next few years. These systems offer more than just traditional alarm
+            functions—they provide
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section
+        class="max-w-6xl mx-auto py-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="VR Headset"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              Virtual Reality Headset Showdown: Oculus vs. HTC Vive vs.
+              PlayStation VR
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Health
+            </span>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="Big Data"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              The Impact of Big Data on Our Daily Lives
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Emerging
+            </span>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="Big Data"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              The Impact of Big Data on Our Daily Lives
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Emerging
+            </span>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="Big Data"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              The Impact of Big Data on Our Daily Lives
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Emerging
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="max-w-6xl mx-auto py-12">
+        <h2 class="text-2xl font-bold mb-6 text-center">
+          The Rise of Smart Home Security
+        </h2>
+        <div class="flex flex-col items-center">
+          <img
+            src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=1200"
+            alt="Smart Home Device"
+            class="w-full max-w-4xl rounded-md shadow-md mb-6" />
+          <p class="text-center max-w-3xl">
+            Smart home security systems have seen a tremendous rise in
+            popularity, with the market expected to grow exponentially in the
+            next few years. These systems offer more than just traditional alarm
+            functions—they provide
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section
+        class="max-w-6xl mx-auto py-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="VR Headset"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              Virtual Reality Headset Showdown: Oculus vs. HTC Vive vs.
+              PlayStation VR
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Health
+            </span>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="Big Data"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              The Impact of Big Data on Our Daily Lives
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Emerging
+            </span>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="Big Data"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              The Impact of Big Data on Our Daily Lives
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Emerging
+            </span>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=400"
+            alt="Big Data"
+            class="w-40 h-28 object-cover rounded-md" />
+          <div>
+            <h3 class="font-bold text-lg mb-2">
+              The Impact of Big Data on Our Daily Lives
+            </h3>
+            <span class="text-sm bg-purple-500 text-white px-2 py-1 rounded">
+              Emerging
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-teal-900 text-teal-200 text-sm text-center py-6 mt-16 transition-colors hover:text-coral-400">
+      © 2025 TechNews. All rights reserved.
+    </footer>
+  </body>
+</html>
